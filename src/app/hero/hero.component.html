@@ -1,0 +1,11 @@
+<section *ngFor="let hero of hero" class="hero parallax" attr.role={{hero.fields.accessibilityRole}} attr.aria-label={{hero.fields.accessibilityLabel}} [ngStyle]="{'background-image':'url('+ hero.fields.heroImage.fields.file.url +')'}">
+  <div class="overlay"></div>
+  <div class="header-content">
+  <h1 class="font-weight-bold">{{ hero.fields.heroHeader }}</h1>
+    <p class="lead p-lg-6 p-lg-offset-3">{{ hero.fields.heroSubHeader }}</p>
+    <p>
+      <a href="{{hero.fields.heroCallToActionLink}}" class="ui-button" role="button" attr.aria-label={{hero.fields.linkAccessibilityLabel}}>{{ hero.fields.heroCallToAction }}</a>
+      <a *ngIf="hero.fields.heroSecondaryCallToAction" href="{{hero.fields.heroSecondaryCallToActionLink}}" class="ui-button secondary ui-secondary-button-transparent" role="button" attr.aria-label={{hero.fields.secondaryLinkAccessibilityLabel}}>{{ hero.fields.heroSecondaryCallToAction }}</a>
+    </p>    
+</div>
+</section>

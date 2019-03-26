@@ -1,0 +1,80 @@
+<footer>
+  <div *ngFor="let footer of footer">
+    <div class="bg-dark py-5">
+      <div class="p-grid container p-justify-center">
+        <div class="p-col-6 p-md-6 p-lg-2">
+          <div class="text-uppercase font-weight-bold mr-3">
+              {{footer.fields.sectionOneTitle}}
+          </div>
+          <div class="footer-links font-weight-light">
+            <ul>
+              <li *ngFor="let link of footer.fields.sectionOneLinks">
+                <a class="text-white" href="">{{link}}</a>
+              </li>
+            </ul>
+          </div> 
+        </div>
+        <div class="p-col-6 p-md-6 p-lg-2">
+          <div class="text-uppercase font-weight-bold text-white pb-2 mr-3">
+            {{footer.fields.sectionTwoTitle}}
+          </div>
+          <div class="footer-links font-weight-light">
+            <ul>
+              <li *ngFor="let link of footer.fields.sectionTwoLinks" >
+                <a class="text-white" href="">{{link}}</a>
+              </li>
+            </ul>
+          </div> 
+        </div>
+        <div class="p-col-6 p-md-6 p-lg-2">
+          <div class="text-uppercase font-weight-bold text-white pb-2 mr-3">
+            {{footer.fields.sectionThreeTitle}}
+          </div>
+          <div class="footer-links font-weight-light">
+            <ul>
+              <li *ngFor="let link of footer.fields.sectionThreeLinks" >
+                <a class="text-white" href="">{{link}}</a>
+              </li>
+            </ul>
+          </div> 
+          </div>
+          <div class="p-col-6 p-md-6 p-lg-2">
+            <div class="text-uppercase font-weight-bold text-white pb-2 mr-3">
+              {{footer.fields.sectionFourTitle}}
+            </div>
+            <div class="footer-links font-weight-light">
+              <ul>
+                <li *ngFor="let link of footer.fields.sectionFourLinks" >
+                  <a class="text-white" href="">{{link}}</a>
+                </li>
+              </ul>
+            </div> 
+          </div>    
+          <div class="p-col-12 p-md-12 p-lg-2">
+            <div class="text-uppercase font-weight-bold text-white pb-2 mr-3">
+              {{footer.fields.sectionFiveTitle}}
+            </div>
+            <div class="footer-links font-weight-light">
+              <ul>
+                <li *ngFor="let link of footer.fields.sectionFiveLinks" >
+                  <a class="text-white" href="">{{link}}</a>
+                </li>
+              </ul>
+            </div> 
+        </div>                  
+        <div class="p-col-12">
+          <div class="center pb-0 mt-4">
+            <img *ngFor="let image of footer.fields.accessibleImages" class="mr-2" src="{{image.fields.imageFile.fields.file.url}}" alt="{{image.fields.alt}}" title="{{image.fields.title}}">
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="bg-gray">
+    <div class="p-grid container p-justify-center">
+      <div class=" footer-links text-center py-2 font-weight-light text-white">
+          <div class="p-col"><a *ngFor="let link of footer.fields.sectionSixLinks" class="text-white pr-4">{{link}}</a></div>
+        </div>
+      </div>
+  </div>
+</div>
+</footer>

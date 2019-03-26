@@ -1,0 +1,320 @@
+/*BOOTSTRAP MATERIAL DESIGN OVERWRITES*/
+
+/*global styles*/
+html {
+    scroll-behavior: smooth;
+  }
+a {
+    color: #0D76BA;
+}
+body {
+    background-color: #ffffff;
+}
+p, body, .card-text {
+    font-size: 1rem;
+    font-weight:200;
+}
+.btn.overlap {
+    position: relative;
+    top: 50px;
+}
+.parallax { 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.overlay {
+    background-color: rgba(64, 63, 72, 0.86);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+/*primary nav*/
+.navbar-brand {
+    padding-right: 0px !important;
+}
+.navbar-brand img {
+    max-width: 200px;
+}
+.navbar-nav .nav-link {
+    font-size: 1rem;
+}
+.nav-pills a.active:after {
+    left: 100%;
+    border: solid transparent;
+    content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(136,183,213,0);
+    border-left-color: #032337;
+    border-width: 9px;
+    margin-top: -2x;
+    z-index: 1;
+}
+/*primary button*/
+.bmd-btn-fab.btn-primary.custom-file-control:before, 
+.btn-group-raised .btn-primary.custom-file-control:before, 
+.btn-group-raised .btn.btn-primary, 
+.btn-raised.btn-primary.custom-file-control:before,
+.btn.bmd-btn-fab.btn-primary,
+ .btn.btn-raised.btn-primary {
+    background-color: #3DB1F2;
+    border-color: #3DB1F2;
+    box-shadow: 8px 10px 20px 0 rgba(46,61,73,.15);
+    /* background-color: #51a6dc;
+     border-color: #51a6dc; */
+     /* background: rgb(0,94,159);
+     background: linear-gradient(106deg, rgba(0,94,159,1) 0%, rgba(81,166,220,1) 23%, rgba(0,212,255,1) 84%); */
+ }
+ .bmd-btn-fab.btn-primary.active.custom-file-control:before,
+.bmd-btn-fab.btn-primary.custom-file-control:active:before,
+.bmd-btn-fab.btn-primary.custom-file-control:focus:before,
+.bmd-btn-fab.btn-primary.custom-file-control:hover:before,
+.bmd-btn-fab.btn-primary.focus.custom-file-control:before,
+.btn-group-raised .btn-primary.active.custom-file-control:before,
+.btn-group-raised .btn-primary.custom-file-control:active:before,
+.btn-group-raised .btn-primary.custom-file-control:focus:before,
+.btn-group-raised .btn-primary.custom-file-control:hover:before,
+.btn-group-raised .btn-primary.focus.custom-file-control:before,
+.btn-group-raised .btn.btn-primary.active,
+.btn-group-raised .btn.btn-primary.focus,
+.btn-group-raised .btn.btn-primary:active,
+.btn-group-raised .btn.btn-primary:focus,
+.btn-group-raised .btn.btn-primary:hover,
+.btn-raised.btn-primary.active.custom-file-control:before,
+.btn-raised.btn-primary.custom-file-control:active:before,
+.btn-raised.btn-primary.custom-file-control:focus:before,
+.btn-raised.btn-primary.custom-file-control:hover:before,
+.btn-raised.btn-primary.focus.custom-file-control:before,
+.btn.bmd-btn-fab.btn-primary.active,
+.btn.bmd-btn-fab.btn-primary.focus,
+.btn.bmd-btn-fab.btn-primary:active,
+.btn.bmd-btn-fab.btn-primary:focus,
+.btn.bmd-btn-fab.btn-primary:hover,
+.btn.btn-raised.btn-primary.active,
+.btn.btn-raised.btn-primary.focus,
+.btn.btn-raised.btn-primary:active,
+.btn.btn-raised.btn-primary:focus,
+.btn.btn-raised.btn-primary:hover,
+.open>.bmd-btn-fab.btn-primary.dropdown-toggle.custom-file-control:before,
+.open>.btn-group-raised .btn-primary.dropdown-toggle.custom-file-control:before,
+.open>.btn-group-raised .btn.btn-primary.dropdown-toggle,
+.open>.btn-raised.btn-primary.dropdown-toggle.custom-file-control:before,
+.open>.btn.bmd-btn-fab.btn-primary.dropdown-toggle,
+.open>.btn.btn-raised.btn-primary.dropdown-toggle {
+    background-color: #4895c6;
+    border-color: #4895c6;
+    box-shadow: 2px 4px 8px 0 rgba(46,61,73,.2);
+
+}
+.btn-primary.custom-file-control:before, 
+.btn.btn-primary {
+    color: #0D76BA;
+    background-color: transparent;
+    border-color: #ccc;
+}
+.btn-primary.active.custom-file-control:before,
+.btn-primary.custom-file-control:active:before,
+.btn-primary.custom-file-control:focus:before,
+.btn-primary.custom-file-control:hover:before,
+.btn-primary.focus.custom-file-control:before,
+.btn.btn-primary.active,
+.btn.btn-primary.focus,
+.btn.btn-primary:active,
+.btn.btn-primary:focus,
+.btn.btn-primary:hover,
+.open>.btn-primary.dropdown-toggle.custom-file-control:before,
+.open>.btn.btn-primary.dropdown-toggle {
+	color: #0D76BA;
+	background-color: hsla(0, 0%, 60%, .2);
+	border-color: hsla(0, 0%, 60%, .2);
+}
+/*secondary button*/
+.bmd-btn-fab.btn-secondary.custom-file-control:before,
+.btn-group-raised .btn-secondary.custom-file-control:before,
+.btn-group-raised .btn.btn-secondary,
+.btn-raised.btn-secondary.custom-file-control:before,
+.btn.bmd-btn-fab.btn-secondary,
+.btn.btn-raised.btn-secondary {
+	color: #3DB1F2;
+	background-color: #fff;
+	border: #3DB1F2 1px solid;
+	box-shadow: none;
+}
+.bmd-btn-fab.btn-secondary.active.custom-file-control:before,
+.bmd-btn-fab.btn-secondary.custom-file-control:active:before,
+.bmd-btn-fab.btn-secondary.custom-file-control:focus:before,
+.bmd-btn-fab.btn-secondary.custom-file-control:hover:before,
+.bmd-btn-fab.btn-secondary.focus.custom-file-control:before,
+.btn-group-raised .btn-secondary.active.custom-file-control:before,
+.btn-group-raised .btn-secondary.custom-file-control:active:before,
+.btn-group-raised .btn-secondary.custom-file-control:focus:before,
+.btn-group-raised .btn-secondary.custom-file-control:hover:before,
+.btn-group-raised .btn-secondary.focus.custom-file-control:before,
+.btn-group-raised .btn.btn-secondary.active,
+.btn-group-raised .btn.btn-secondary.focus,
+.btn-group-raised .btn.btn-secondary:active,
+.btn-group-raised .btn.btn-secondary:focus,
+.btn-group-raised .btn.btn-secondary:hover,
+.btn-raised.btn-secondary.active.custom-file-control:before,
+.btn-raised.btn-secondary.custom-file-control:active:before,
+.btn-raised.btn-secondary.custom-file-control:focus:before,
+.btn-raised.btn-secondary.custom-file-control:hover:before,
+.btn-raised.btn-secondary.focus.custom-file-control:before,
+.btn.bmd-btn-fab.btn-secondary.active,
+.btn.bmd-btn-fab.btn-secondary.focus,
+.btn.bmd-btn-fab.btn-secondary:active,
+.btn.bmd-btn-fab.btn-secondary:focus,
+.btn.bmd-btn-fab.btn-secondary:hover,
+.btn.btn-raised.btn-secondary.active,
+.btn.btn-raised.btn-secondary.focus,
+.btn.btn-raised.btn-secondary:active,
+.btn.btn-raised.btn-secondary:focus,
+.btn.btn-raised.btn-secondary:hover,
+.open>.bmd-btn-fab.btn-secondary.dropdown-toggle.custom-file-control:before,
+.open>.btn-group-raised .btn-secondary.dropdown-toggle.custom-file-control:before,
+.open>.btn-group-raised .btn.btn-secondary.dropdown-toggle,
+.open>.btn-raised.btn-secondary.dropdown-toggle.custom-file-control:before,
+.open>.btn.bmd-btn-fab.btn-secondary.dropdown-toggle,
+.open>.btn.btn-raised.btn-secondary.dropdown-toggle {
+	color: #fff;
+	background-color: #73b7e3;
+	border-color: #73b7e3;
+}
+.btn-primary:not(:disabled):not(.disabled).active, 
+.btn-primary:not(:disabled):not(.disabled):active, 
+.show>.btn-primary.dropdown-toggle {
+    background-color:#0D76BA;
+    color: #fff;
+}
+/* .card {
+    box-shadow: 8px 10px 20px 0 rgba(46,61,73,.15);
+    -webkit-box-shadow: 8px 10px 20px 0 rgba(46,61,73,.15);
+    -moz-box-shadow: 8px 10px 20px 0 rgba(46,61,73,.15);
+} */
+/* .card .icon {
+    margin: auto;
+    max-width: 100px;
+}
+.card.interactive:hover {
+    box-shadow: 2px 4px 8px 0 rgba(46,61,73,.2);
+}
+.card-title {
+    padding-bottom: .5rem;
+    padding-top: .5rem;
+} */
+.background {
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+}
+.border {
+    border: 1px solid #dddddd;
+}
+/* .hero {
+    margin-top: 85px;
+} */
+.navbar {
+    -webkit-box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #ddd;
+}
+/* .navbar.primary-navigation {
+    top: 40px;
+} */
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0,0,0);
+    font-weight: 450 !important;
+    text-transform: uppercase !important;
+}
+.navbar-light .navbar-nav .nav-link:focus, 
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #0D76BA
+}
+.no-shadow {
+    box-shadow: none;
+}
+/* .features .card {
+    height: 270px
+} */
+a.no-decoration {
+    color: #212529;
+}
+a.no-decoration:hover {
+    text-decoration: none;
+}
+.no-overflow {
+    overflow: hidden;
+}
+/*colors*/
+.text-primary {
+    color: #0D76BA  !important;
+}
+.text-secondary {
+    color: #3DB1F2 !important;
+}
+.bg-img-right {
+    background-position: center center;
+    background-size: cover;
+    height: 400px;
+    position: absolute;
+    right: 0;
+    width: 50%;
+}
+.bg-primary {
+    background: #3d91c7   !important;
+}
+.bg-primary .card-title,
+.bg-primary .card-text,
+.bg-primary .btn {
+    color: #fff;
+}
+.bg-primary .btn-primary:hover {
+    background: #3DB1F2;
+    color: #fff;
+}
+.bg-primary .btn-primary:active {
+    background: #fff !important;
+    color: #0D76BA !important;
+}
+.bg-secondary {
+    background: #f8f9fa !important;
+    border-top: 1px solid #f3f6fa;
+    border-bottom: 1px solid #f3f6fa;
+}
+.bg-light {
+    background: #f3f3f3 !important;
+    /* background: #f3f6fa  !important; */
+}
+/* .footer-links{
+    font-size: 14px;
+} */
+/* .bg-dark {
+    background-color: #052f4a !important;
+} */
+.bg-darker {
+    background-color: #032337;
+}
+.bg-light .section-title {
+    color:#212529;
+}
+.bg-dark .section-title,
+.bg-dark {
+    color:#ffffff;
+}
+.transparent {
+    background: none
+}
+@media (max-width: 768px) { 
+    .navbar {
+       z-index: 2000;
+    }
+}

@@ -1,0 +1,18 @@
+<section *ngFor="let faqs of faqs"  id="{{faqs.fields.contentBlockId}}" role="complementary" [ngStyle]="{'background-image': faqs.fields.backgroundImage ? 'url('+faqs.fields.backgroundImage.fields.file.url +')' : 'none'}" class="bg-dark">
+  <div class="p-grid p-align-center container pb-5">
+    <div class="p-col-12 p-lg-6">
+        <h2 class="display-3 h2 font-weight-bold" [ngClass]="!faqs.fields.subTitle ? 'mb-5 pb-3' : ''">{{faqs.fields.title}}<span class="text-yellow">.</span></h2>
+        <p *ngIf="faqs.fields.subTitle" class="lead">{{faqs.fields.subTitle}}</p>
+        <a *ngIf="faqs.fields.callToActionText" href="#" class="ui-button secondary ui-secondary-button-transparent" role="button" >{{faqs.fields.callToActionText}}</a>
+    </div>
+      <div class="p-col-12 p-lg-6 mt-4 faq">
+        <div *ngFor="let faq of faqs.fields.feature" class="">
+           <p-accordion>
+                <p-accordionTab header="{{faq.fields.question}}">
+                    {{faq.fields.answer}}
+                </p-accordionTab>
+           </p-accordion>
+        </div>
+      </div>
+  </div>
+</section>  

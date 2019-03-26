@@ -1,0 +1,18 @@
+<section *ngFor="let data of data" class="parallax bg-accent shadow" role="complementary">
+    <div class="p-grid container center px-3 py-3">
+    <div *ngFor="let item of data.fields.feature" class="p-col-12 p-md-3">
+      <p class="display-3 font-weight-bold text-white my-3">{{item.fields.highlightTitle}}</p>
+      <p class="font-weight-light text-white">{{item.fields.highlightText}}</p>
+    </div>
+  </div>
+  </section>
+
+  <!-- <section *ngFor="let data of data" class="parallax bg-dark" role="complementary" [ngStyle]="{'background-image': data.fields.backgroundImage ? 'url('+data.fields.backgroundImage.fields.file.url +')' : 'none'}">
+      <div class="overlay"></div>
+      <div class="p-grid container center px-3 py-3">
+      <div *ngFor="let item of data.fields.feature" class="p-col-12 p-md-3">
+        <p class="display-3 font-weight-bold text-white my-3">{{item.fields.highlightTitle}}</p>
+        <p class="font-weight-bold text-white">{{item.fields.highlightText}}</p>
+      </div>
+    </div>
+    </section> -->

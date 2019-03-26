@@ -1,0 +1,102 @@
+/* Common */
+$transitionDuration:.3s;
+$borderRadius:4px;
+
+/* Layout */
+$bodyBgColor:#ffffff;
+$maskBgColor:#424242;
+$topbarButtonColor:#0D76BA;
+$topbarButtonHoverColor:#e8e8e8;
+$topbarSearchBorderColor:#ffffff;
+$topbarSearchColor:#ffffff;
+$topbarIconColor:#0D76BA;
+$topbarIconHoverColor:#e8e8e8;
+$topbarMenuBgColor:#ffffff;
+$layoutMenuBgColor:#ffffff;
+$layoutMenuScrollbarBgColor:#aaaaaa;
+$layoutMenuItemIconColor:#757575;
+$layoutMenuItemActiveColor:#e8e8e8;
+$horizontalLayoutMenuItemTextColor:#ffffff;
+$horizontalLayoutMenuItemHoverBgColor:#e8e8e8;
+$horizontalLayoutMenuSubMenuBgColor:#ffffff;
+$horizontalLayoutMenuSubMenuActiveBgColor:#e8e8e8;
+$horizontalDarkLayoutMenuItemTextColor:#ffffff;
+$slimLayoutMenuSubMenuBgColor:#ffffff;
+$slimMenuTooltipColor:#ffffff;
+$rightPanelBgColor:#ffffff;
+$topbarSubmenuBgColor:#ffffff;
+$profileMenuBorderBottomColor:#d6d5d5;
+$profileMenuDarkBorderBottomColor:#545454;
+$darkMenuColor:#ffffff;
+$formGroupPadding:1em;
+
+/* Spacing */
+$xsmallMargin: .25rem;
+$smallMargin: .5rem;
+$mediumMargin: 1rem;
+$largeMargin: 1.5rem;
+$xlargeMargin: 3rem;
+$xsmallPadding: .25rem;
+$smallPadding: .5rem;
+$mediumPadding: 1rem;
+$largePadding: 1.5rem;
+$xlargePadding: 3rem;
+
+/* Font */
+$textColor:#212121;
+$textSecondaryColor:#757575;
+$fontSize:1em;
+$fontSizeSmall: .775em;
+$fontSizeLead: 1.5em;
+$fontSizeMedium:2.125em;
+$fontSizeLarge:2.8125em;
+$fontSizeExtraLarge:3.5em;
+$fontSizeSuperDuperLarge: 7em;
+$lineHeight:1.5em;
+$fontWeightLight:100;
+$fontWeightNormal: 300;
+$fontWeightMedium:400;
+$fontWeightSemiBold: 500;
+$fontWeightBold: 700;
+
+/* Buttons */
+$primaryButtonColor: #3DB1F2;
+$secondaryButtonColor: #ffffff;
+$secondaryButtonHover:#73b7e3;
+$transparent: transparent;
+$transparentHover: hsla(0,0%,60%,.2);
+$buttonLightColor: #f5f5f5;
+
+/* Theme */
+$headerFontSize:1em;
+$headerPadding:.625em 1em;
+$contentFontSize:1em;
+$contentPadding:.625em 1em;
+$inputHeaderFontSize:1em;
+$inputHeaderPadding:.625em 1em;
+$inputBorderColor:#bdbdbd;
+$inputBorderErrorColor:#e62a10;
+$inputErrorTextColor:#e62a10;
+$textboxBgColor:#f7f7f7;
+$inputFontSize:1em;
+$buttonFontSize:.875em;
+$inputOptionFontSize:1em;
+$inputOptionPadding:.625em .875em;
+$hoverBgColor:#e8e8e8;
+$hoverTextColor:#000000;
+$dividerColor:#bdbdbd;
+$dividerLightColor:#cacaca;
+$grayBgColor:#757575;
+$iconFontSize:1.5em;
+$invalidInputLabelColor:#e62a10;
+$invalidInputBorderColor:#e62a10;
+$activeMenuItemBadgeColor:#ffffff;
+$activeMenuItemBadgeTextColor:#212121;
+$datatableEvenRowBgColor:#f4f4f4;
+
+/* Design Elements */
+$grayBorder: 1px solid #ddd;
+
+/* Compact */
+$c-fontSize:14px;
+$c-lineHeight:18px;

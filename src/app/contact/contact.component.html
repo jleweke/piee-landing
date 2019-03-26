@@ -1,0 +1,16 @@
+<section *ngFor="let contact of contact"  id="{{contact.fields.contentBlockId}}" role="complementary" class="bg-accent">
+    <div class="p-grid p-align-center container pb-5">
+      <div class="p-col-12 p-lg-6">
+          <h2 class="display-3 h2 font-weight-bold" [ngClass]="!contact.fields.subTitle ? 'mb-5 pb-3' : ''">{{contact.fields.title}}<span class="text-yellow">.</span></h2>
+          <p *ngIf="contact.fields.subTitle" class="lead">{{contact.fields.subTitle}}</p>
+          <a *ngIf="contact.fields.callToActionText" href="#" class="ui-button secondary ui-secondary-button-transparent" role="button" >{{contact.fields.callToActionText}}</a>
+      </div>
+        <div class="p-col-12 p-lg-6 mt-4">
+          <div *ngFor="let contact of contact.fields.feature" class="">
+              <h3 *ngIf="contact.fields.highlightTitle">{{contact.fields.highlightTitle}}</h3>
+              <p *ngIf="contact.fields.highlightSubtitle" class="display-3 font-weight-bold">{{contact.fields.highlightSubtitle}}</p>
+              <a *ngIf="contact.fields.highlightLinkText" href="{{contact.fields.highlightLink}}}" class="ui-button secondary" role="button" >{{contact.fields.highlightLinkText}}</a>
+          </div>
+        </div>
+    </div>
+  </section>  

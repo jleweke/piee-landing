@@ -1,0 +1,63 @@
+<section *ngFor="let about of about" class="pt-5" [ngClass]="!about.fields.callToActionText ? 'pb-5' :''" id="{{about.fields.contentBlockId}}">
+    <div class="p-grid container">
+      <div *ngIf="about.fields.title" class="p-col-12 center">
+        <h2 class="display-3 h2 font-weight-bold" [ngClass]="!about.fields.subtitle ? 'mb-5 pb-3' : ''">{{about.fields.title}}<span class="text-yellow">.</span></h2>
+        <p *ngIf="about.fields.subtitle" class="lead">{{about.fields.subTitle}}</p>
+      </div>
+      <div *ngFor="let item of about.fields.feature" [ngClass]="about.fields.feature.length > 3 ? 'p-md-3 center' : 'p-md-4 center'">
+  
+        <div class="card no-shadow text-center border-0">
+            <p-card>
+                <p-header>
+                  <i *ngIf="item.fields.highlightIcon" class="fa {{item.fields.highlightIcon}}  icon-box hoverable large"></i>
+                  <!-- <img class="card-img-top icon" alt="{{item.fields.image.fields.alt}}" title="{{item.fields.image.fields.title}}" role="presentation" src="{{item.fields.image.fields.imageFile.fields.file.url}}"> -->
+                </p-header>
+                <h3 class="card-title font-weight-normal">
+                    {{item.fields.highlightTitle}}
+                  </h3>
+                <p class="card-text">{{item.fields.highlightText}} </p>
+                 <p-footer>
+                    <a *ngIf="item.fields.highlightLinkText" href="{{item.fields.highlightLink}}" class="ui-button text-button" attr.aria-label={{item.fields.highlightLinkAccessibilityLabel}} role="button">{{item.fields.highlightLinkText}} </a>
+                  </p-footer>                   
+            </p-card>        
+        </div>
+
+      </div>
+    </div>
+    <div *ngIf="about.fields.callToActionText" class="center">
+          <a href="" class="ui-button secondary overlap" role="button">{{about.fields.callToActionText}}</a>
+     </div>
+  </section>
+
+<!-- <section *ngFor="let about of about" [ngClass]="" class="background bg-light py-5" id="{{about.fields.contentBlockId}}">
+  <div class="p-grid container pt-4">
+    <div *ngIf="about.fields.title" class="p-md-6 p-sm-12">
+      <h2 class="display-3 h2 text-accent">{{about.fields.title}}</h2>
+      <p class="lead">{{about.fields.subTitle}}</p>
+      <div *ngIf="about.fields.callToActionText">
+          <div class="p-col-12">
+              <p><a href="" class="ui-button secondary" role="button">{{about.fields.callToActionText}}</a></p>
+          </div>
+        </div>
+    </div>
+    <div class="p-md-6 p-sm-12 mt-4">
+      <div *ngFor="let item of about.fields.feature" [ngClass]="about.fields.feature.length > 3 ? 'p-md-12' : 'p-md-12'">
+          <div class="card no-shadow border-0 mx-4">
+              <p-card header styleClass="ui-card-shadow interactive">
+                  <p-header>
+                      <img class="card-img-top icon float-left py-4 px-2" alt="{{item.fields.image.fields.alt}}" title="{{item.fields.image.fields.title}}" role="presentation" src="{{item.fields.image.fields.imageFile.fields.file.url}}">
+                  </p-header>
+                  <div class="no-overflow pl-4">
+                    <h3 class="card-title display-5 mt-0">
+                        {{item.fields.highlightTitle}}
+                      </h3>
+                    <p class="card-text">{{item.fields.highlightText}}</p>
+                        <a *ngIf="item.fields.highlightLinkText" href="#" class="ui-button text-button" attr.aria-label={{item.fields.highlightLinkAccessibilityLabel}} role="button">{{item.fields.highlightLinkText}} →</a>
+                  </div>                
+              </p-card>        
+          </div>
+      </div>
+  </div>
+</div>
+</section> -->
+

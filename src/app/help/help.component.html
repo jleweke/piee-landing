@@ -1,0 +1,38 @@
+<section *ngFor="let help of help" id="{{help.fields.contentBlockId}}" class="py-5 background bg-light" [ngStyle]="{'background-image': help.fields.backgroundImage ? 'url('+ help.fields.backgroundImage.fields.file.url +')' : 'none'}">
+  <!-- <div class="overlay"></div> -->
+  <div class="p-grid pb-5">
+    <div class="p-grid container">
+    <div class="p-col-12 center">
+        <h2 class="display-3 h2 font-weight-bold" [ngClass]="!help.fields.subtitle ? 'mb-5 pb-3' : ''">{{help.fields.title}}<span class="text-yellow">.</span></h2>
+        <p *ngIf="help.fields.subTitle" class="lead">{{help.fields.subTitle}}</p>
+    </div>
+      <div *ngFor="let item of help.fields.feature" [ngClass]="help.fields.feature.length > 4 ? 'p-col-12 p-md-6 p-lg-3' : ' p-col-12 p-lg-4'">
+      <a class="no-decoration" attr.aria-label={{item.fields.highlightLinkAccessibilityLabel}} href="item.fields.highlightLink">
+        <p-card header styleClass="ui-card-shadow interactive">
+          <p-header>
+              <img class="card-img-top" alt="{{item.fields.image.fields.alt}}" title="{{item.fields.image.fields.title}}" role="presentation" src="{{item.fields.image.fields.imageFile.fields.file.url}}">
+          </p-header>
+            <h3 class="card-header h5 my-0 font-weight-light text-uppercase">
+                {{item.fields.highlightTitle}}
+              </h3>
+            <p class="h6">{{item.fields.highlightSubtitle}}</p>
+            <p class="card-text">{{item.fields.highlightText}}</p>   
+            <p-footer>
+              <div class="center">
+                <a class="ui-button text-button"  role="button" href="{{item.fields.highlightLink}}">{{item.fields.highlightLinkText}} </a>
+              </div>
+            </p-footer>                   
+        </p-card>
+        <!-- <div class="card no-shadow interactive border">
+            <img class="card-img-top" alt="{{item.fields.image.fields.alt}}" title="{{item.fields.image.fields.title}}" role="presentation" src="{{item.fields.image.fields.imageFile.fields.file.url}}">
+            <h5 class="card-header h6 font-weight-light text-uppercase">{{item.fields.highlightTitle}}</h5>
+        <div class="card-body">
+          <p class="h5">{{item.fields.highlightSubtitle}}</p>
+          <p class="card-text">{{item.fields.highlightText}}</p>
+        </div>
+        </div> -->
+      </a>
+      </div>
+  </div>
+</div>
+</section>

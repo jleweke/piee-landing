@@ -1,0 +1,41 @@
+<section *ngFor="let features of features" id="{{features.fields.contentBlockId}}" role="complimentary" class="pt-5" [ngStyle]="{'background-image': features.fields.backgroundImage ? 'url('+features.fields.backgroundImage.fields.file.url +')' : 'none'}">
+  <div class="p-grid container">
+    <div class="p-col-12 center">
+      <h2 class="display-3 h2 font-weight-bold" [ngClass]="!features.fields.subtitle ? 'mb-5 pb-3' : ''">{{features.fields.title}}<span class="text-yellow">.</span></h2>
+      <p *ngIf="features.fields.subtTitle" class="lead">{{features.fields.subTitle}}</p>
+    </div>
+    <div *ngFor="let item of features.fields.feature" class="ui-card horizontal p-grid">
+    <!--image left-->
+      <div *ngIf="!item.fields.imageRight" class="p-col-12 p-md-6">
+          <img class="card no-shadow border-0 background" src="{{item.fields.image.fields.imageFile.fields.file.url}}"  title="{{item.fields.image.fields.title}}" alt="{{item.fields.image.fields.alt}}"/>
+        </div> 
+      <!--/--> 
+      <!--image right on small screens-->
+      <div *ngIf="item.fields.imageRight" class="p-col-12 p-md-6 show-small">
+        <img class="card no-shadow border-0 background" src="{{item.fields.image.fields.imageFile.fields.file.url}}"  title="{{item.fields.image.fields.title}}" alt="{{item.fields.image.fields.alt}}"/>
+      </div>
+    <!--/-->   
+     <div class="p-col-12 p-md-6">
+         <div class="card no-shadow border-0">
+             <div class="card-body">
+             <h3 class="display-4 font-weight-bold pb-3">{{item.fields.highlightTitle}}</h3>
+             <p *ngIf="item.fields.highlightText" class="card-text">
+               {{item.fields.highlightText}}</p>
+             <ul *ngIf="item.fields.highlightList" class="list-group">
+                <li *ngFor="let list of item.fields.highlightList" class="list-group-item py-1"><i class="material-icons text-primary">check</i> {{list}} </li>
+             </ul>
+             <a *ngIf="item.fields.highlightLinkText" href="#" class="ui-button text-button" role="button" attr.aria-label={{item.fields.highlightLinkAccessibilityLabel}}>{{item.fields.highlightLinkText}}</a>
+           </div>
+         </div>
+       </div>
+       <!--image right on large screens-->
+      <div *ngIf="item.fields.imageRight" class="p-col-12 p-md-6 show-large">
+          <img class="card no-shadow border-0 background" src="{{item.fields.image.fields.imageFile.fields.file.url}}"  title="{{item.fields.image.fields.title}}" alt="{{item.fields.image.fields.alt}}"/>
+        </div>
+      <!--/-->
+   </div>
+  </div>
+  <div class="center">
+    <a href="{{features.fields.callToActionLink}}" class="ui-button overlap" role="button">{{features.fields.callToActionText}}</a>
+  </div>
+</section>  

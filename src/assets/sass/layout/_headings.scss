@@ -1,0 +1,136 @@
+    h1, .h1 {
+        font-size: $fontSizeExtraLarge;
+        font-weight: $fontWeightMedium;
+        margin: 1em 0;
+    
+        &:first-child {
+            margin-top: .667em;
+        }
+    }
+    h2, .h2 {
+        font-size: $fontSizeLarge;
+        font-weight: $fontWeightMedium;
+        margin-bottom: $xlargeMargin; 
+    }
+    
+    h3, .h3 {
+        font-size: $fontSizeMedium;
+        font-weight: $fontWeightMedium;
+        margin-bottom: $xlargeMargin; 
+    }
+    
+    h4, .h4 {
+        font-size: $fontSizeLead;
+        font-weight: $fontWeightMedium;
+        margin-bottom: $xlargeMargin;    
+    }
+    h5, .h5 {
+        font-size: $fontSizeLead;
+        font-weight: $fontWeightMedium;
+        margin-bottom: $xlargeMargin;    
+    }
+    h6, .h6 {
+        font-size: $fontSize;
+        font-weight: $fontWeightSemiBold;
+        margin-bottom: $xlargeMargin;    
+    }
+    h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+        margin-bottom: $xlargeMargin;
+    }
+    .display-1, 
+    .display-2, 
+    .display-3, 
+    .display-4,
+    .display-5 {
+        font-weight: $fontWeightMedium;
+        line-height: 1.2
+    }
+    .display-1 {
+        font-size: $fontSizeSuperDuperLarge;
+    }
+    .display-2 {
+        font-size: $fontSizeExtraLarge;
+    }
+    .display-3 {
+        font-size: $fontSizeLarge;
+    }
+    .display-4 {
+        font-size: $fontSizeMedium;
+    }
+    .display-5 {
+    font-size: $fontSizeLead;
+    }
+
+@media (max-width: 768px) {
+
+h1, .h1 {
+    font-size: $fontSizeMedium;
+    font-weight: $fontWeightMedium;
+    margin: 1em 0;
+
+    &:first-child {
+        margin-top: .667em;
+    }
+}
+h2, .h2 {
+    font-size: $fontSizeMedium;
+    font-weight: $fontWeightMedium;
+    margin-bottom: $xlargeMargin; 
+}
+
+h3, .h3 {
+    font-size: $fontSizeLead;
+    font-weight: $fontWeightMedium;
+    margin-bottom: $xlargeMargin; 
+}
+
+h4, .h4 {
+    font-size: $fontSizeLead;
+    font-weight: $fontWeightMedium;
+    margin-bottom: $xlargeMargin;    
+}
+h5, .h5 {
+    font-size: $fontSizeLead;
+    font-weight: $fontWeightMedium;
+    margin-bottom: $xlargeMargin;    
+}
+h6, .h6 {
+    font-size: $fontSize;
+    font-weight: $fontWeightSemiBold;
+    margin-bottom: $xlargeMargin;    
+}
+h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    margin-bottom: $xlargeMargin;
+}
+.display-1, 
+.display-2, 
+.display-3, 
+.display-4,
+.display-5 {
+    font-weight: $fontWeightMedium;
+    line-height: 1.2
+}
+.display-1 {
+    font-size: $fontSizeExtraLarge;
+}
+.display-2 {
+    font-size: $fontSizeLarge;
+}
+.display-3 {
+    font-size: $fontSizeMedium;
+}
+.display-4 {
+    font-size: $fontSizeLead;
+}
+.display-5 {
+font-size: $fontSizeLead;
+}
+}
+@media (min-width: 476px) {
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 1200px) {
+}

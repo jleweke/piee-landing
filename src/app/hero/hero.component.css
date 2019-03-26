@@ -1,0 +1,15 @@
+.hero {
+    background-position: center center;
+    background-size: cover;
+    color: #fff;
+    width: 100%;
+}
+.hero .jumbotron {
+    background-color: transparent;
+    color: #fff;
+}
+@media (min-width: 992px) {
+    .hero {
+        min-height: 500px;
+    }
+}
