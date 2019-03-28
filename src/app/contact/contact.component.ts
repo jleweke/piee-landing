@@ -9,14 +9,29 @@ import { Entry } from 'contentful';
 })
 export class ContactComponent implements OnInit  {
 
-  private contact: Entry<any>[] = [];
+contactContent = [{
+ "contactBlockId":"contact",
+ "title": "Get in touch",
+ "subTitle": "",
+ "callToActionText":"Send a secure message",
+ "callToActionLink":"https://wawf.eb.mil/xhtml/unauth/web/homepage/governmentCustomerSupport.xhtml",
+ "feature": [{
+    "highlightTitle":"",
+    "highlightSubtitle":"866.618.5988",
+    "highlightText":"",
+    "highlightLinkText":"",
+    "highlightLink":"",
+    "highlightLinkAccessibilityLabel":""
+    }]
+}]
 
-  constructor(private contentfulService: ContentfulService) { }
+
+  public contact: any;
+
+  constructor() { }
 
   ngOnInit() {
-    this.contentfulService.getContact()
-    .then(contact => this.contact = contact);
-    console.log(this.contact)
+    console.log(this.contactContent)
   }
 
 }

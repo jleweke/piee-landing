@@ -9,14 +9,36 @@ import { Entry } from 'contentful';
 })
 export class FaqsComponent implements OnInit {
 
-  private faqs: Entry<any>[] = [];
+public faqs: any;
 
-  constructor(private contentfulService: ContentfulService) { }
+faqsContent =[{
+"contentBlockId":"answers",
+"title":"Frequently asked questions",
+"subTitle":"",
+"callToActionText":"View all faqs",
+"callToActionLink":"",
+"feature" :[{
+  "question":"How do I get started using the PIEE platform?",
+  "answer":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+  },
+  {
+  "question":"Where can I find my GAM/CAM?",
+  "answer":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+  },
+  {
+  "question":"How can I check the status of a payment?",
+  "answer":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+  },
+  {
+  "question":"How do I approve an invoice?",
+  "answer":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+  }]
+}]
+
+  constructor() { }
 
   ngOnInit() {
-    this.contentfulService.getFaqs()
-    .then(faqs => this.faqs = faqs);
-    console.log(this.faqs)
+    console.log(this.faqsContent);
   }
 
 }

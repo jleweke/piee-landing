@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ContentfulService } from './contentful.service';
@@ -141,6 +142,7 @@ import {TreeTableModule} from 'primeng/primeng';
     GalleriaModule,
     GMapModule,
     GrowlModule,
+    HttpClientModule,
     InputMaskModule,
     InputSwitchModule,
     InputTextModule,

@@ -9,15 +9,56 @@ import { Entry } from 'contentful';
 })
 export class AboutComponent implements OnInit {
 
+  aboutContent = [{
+    "contentBlockId":"about",
+    "title": "About the platform",
+    "subTitle": "",
+    "feature": [{
+        "highlightIcon":"ui-icon-account-balance",
+        "highlightTitle":"Who's it for",
+        "highlightText":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.",
+        "highlightLinkText":"",
+        "highlightLink":"",
+        "highlightLinkAccessibilityLabel":""
+      },
+      {
+        "highlightIcon":"ui-icon-trending-up",
+        "highlightTitle":"Why it's needed",
+        "highlightText":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. ",
+        "highlightLinkText":"",
+        "highlightLink":"",
+        "highlightLinkAccessibilityLabel":""
+      },
+      {
+        "highlightIcon":"ui-icon-assessment",
+        "highlightTitle":"What it solves",
+        "highlightText":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. ",
+        "highlightLinkText":"",
+        "highlightLink":"",
+        "highlightLinkAccessibilityLabel":""
+      },
+      {
+        "highlightIcon":"ui-icon-access-time",
+        "highlightTitle":"How it works",
+        "highlightText":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.",
+        "highlightLinkText":"",
+        "highlightLink":"",
+        "highlightLinkAccessibilityLabel":""
+      },      
+    ],
+    "callToActionText":"",
+    "callToActionLink":""
+  }]
 
-  private about: Entry<any>[] = [];
+  public about: any;
 
-  constructor(private contentfulService: ContentfulService) { }
+
+  constructor() {
+
+   }
 
   ngOnInit() {
-    this.contentfulService.getAbout()
-    .then(about => this.about = about);
-    console.log(this.about)
+    console.log(this.aboutContent);
   }
 
 }

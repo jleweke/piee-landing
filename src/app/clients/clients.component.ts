@@ -9,16 +9,44 @@ import { Entry } from 'contentful';
 })
 export class ClientsComponent implements OnInit {
 
-  // private links: Entry<any>[] = [];
-  private banner: Entry<any>[] = [];
+ clientsContent = [{
+   "bannerHeader": "Trusted by our government",
+   "accessibleImages": [{
+      "alt":"Department of Defense logo",
+      "title":"Department of Defense",
+      "url":"assets/images/clients/department-of-defense-logo-gray.png"
+    },
+    {
+      "alt":"Defense Logistics Agency logo",
+      "title":"Defense Logistics Agency",
+      "url":"assets/images/clients/dla-logo-gray.png"
+     },
+     {
+      "alt":"U.S. Army logo",
+      "title":"U.S. Army",
+      "url":"assets/images/clients/air-force-logo-gray.png"
+     },
+     {
+      "alt":"U.S. Air Force logo",
+      "title":"U.S. Air Force",
+      "url":"assets/images/clients/army-logo-gray.png"
+     },
+     {
+      "alt":"America's Navy logo",
+      "title":"America's Navy",
+      "url":"assets/images/clients/navy-logo-gray.png"
+     }],
+    "buttonLink":"",
+    "buttonAccessibilityLabel":"",
+    "buttonText":"Read success stories"
+ }]
 
-  constructor(private contentfulService: ContentfulService) { }
+  public banner: any;
+
+  constructor() { }
 
   ngOnInit() {
-    // this.contentfulService.getClients()
-    // .then(links => this.links = links);
-    this.contentfulService.getClients()
-    .then(banner => this.banner = banner);
+    console.log(this.clientsContent)
   }
 
 }

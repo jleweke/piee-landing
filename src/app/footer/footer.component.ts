@@ -9,14 +9,119 @@ import { Entry } from 'contentful';
 })
 export class FooterComponent implements OnInit {
 
-  private footer: Entry<any>[] = [];
+  footerContent = [{
+    "footerLinks": [{
+      "sectionTitle":"About",
+      "link": [
+        {
+        "linkText":"Lorem ipsum",
+        "url":""
+        },
+        {
+        "linkText":"Lorem ipsum",
+        "url":""
+        },
+        {
+        "linkText":"Lorem ipsum",
+        "url":""
+        },
+        {
+        "linkText":"Lorem ipsum",
+        "url":""
+        },      
+      ]
+      },
+      {
+      "sectionTitle":"Support",
+      "link": [
+        {
+        "linkText":"Lorem ipsum",
+        "url":""
+        },
+        {
+        "linkText":"Lorem ipsum",
+        "url":""
+        },
+        {
+        "linkText":"Lorem ipsum",
+        "url":""
+        },
+        {
+        "linkText":"Lorem ipsum",
+        "url":""
+        },      
+      ]
+      },
+      {
+      "sectionTitle":"Get Started",
+      "link": [
+        {
+        "linkText":"Lorem ipsum",
+        "url":""
+        },
+        {
+        "linkText":"Lorem ipsum",
+        "url":""
+        },
+        {
+        "linkText":"Lorem ipsum",
+        "url":""
+        },
+        {
+        "linkText":"Lorem ipsum",
+        "url":""
+        },      
+      ]
+      },
+      {
+      "sectionTitle":"Contact Us",
+      "link": [
+        {
+        "linkText":"Lorem ipsum",
+        "url":""
+        },
+        {
+        "linkText":"Lorem ipsum",
+        "url":""
+        },
+        {
+        "linkText":"Lorem ipsum",
+        "url":""
+        },
+        {
+        "linkText":"Lorem ipsum",
+        "url":""
+        }      
+      ]
+      }],   
+    "images": [{
+      "imageUrl":"assets/images/footer/app-store-badge.png",
+      "url":"",
+      "title":"App Store",
+      "alt":"App Store badge"
+    },
+    {
+      "imageUrl":"assets/images/footer/google-play.png",
+      "url":"",
+      "title":"Google Play Store",
+      "alt":"Google Play badge"
+    }],
+    "bottomLinks": [{
+      "linkText":"Lorem ipsum",
+      "url":""
+      }, 
+      {
+      "linkText":"Lorem ipsum",
+      "url":""
+    }]
+}]
 
-  constructor(private contentfulService: ContentfulService) { }
+  public footer: any;
+
+  constructor() { }
 
   ngOnInit() {
-    this.contentfulService.getFooter()
-    .then(footer => this.footer = footer);
-    console.log(this.footer)
+    console.log(this.footerContent);
   }
 
 }

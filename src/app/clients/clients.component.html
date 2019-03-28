@@ -1,15 +1,15 @@
-<section *ngFor="let banner of banner" role="complementary" class="bg-light pb-2">
+<section *ngFor="let banner of clientsContent" role="complementary" class="bg-light pb-2">
     <div class="p-grid p-justify-center container center">
         <div class="p-col-12">
-          <div class="float-left ml-5 pl-5 pt-3">{{banner.fields.bannerHeader}}</div>
+          <div class="float-left ml-5 pl-5 pt-3">{{banner.bannerHeader}}</div>
         </div>
     </div>
     <div class="p-grid p-justify-center p-align-center container center">
-      <div *ngFor="let image of banner.fields.accessibleImages"  class="p-col-12 p-sm-6 p-md-4 p-lg-2">
-          <img class="client-logo" src="{{image.fields.imageFile.fields.file.url}}" alt="{{image.fields.alt}}" title="{{image.fields.title}}">      
+      <div *ngFor="let image of banner.accessibleImages"  class="p-col-12 p-sm-6 p-md-4 p-lg-2">
+          <img class="client-logo" [src]="image.url" [alt]="image.alt" [title]="image.title">      
       </div>
     </div>
     <div class="center">
-          <a href="{{banner.fields.buttonLink}}" attr.aria-label={{banner.fields.buttonAccessibilityLabel}} class="ui-button secondary overlap" role="button">{{banner.fields.buttonText}}</a>
+          <a href="{{banner.buttonLink}}" attr.aria-label={{banner.buttonAccessibilityLabel}} class="ui-button secondary overlap" role="button">{{banner.buttonText}}</a>
     </div>
 </section> 
