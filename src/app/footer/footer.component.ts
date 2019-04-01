@@ -107,11 +107,11 @@ export class FooterComponent implements OnInit {
       "alt":"Google Play badge"
     }],
     "bottomLinks": [{
-      "linkText":"Lorem ipsum",
+      "linkText":"Accessibility / 508 ",
       "url":""
       }, 
       {
-      "linkText":"Lorem ipsum",
+      "linkText":"Privacy & Security",
       "url":""
     }]
 }]

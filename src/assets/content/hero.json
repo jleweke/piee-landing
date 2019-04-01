@@ -1,0 +1,16 @@
+[{
+    "accessibility": {
+      "role":"banner",
+      "label":"Secure end-to-end procurement platform"
+    },
+      "image":"assets/images/hero/man-in-city.jpg",
+      "header":"Secure end-to-end procurement platform",
+      "subHeader":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor.",
+      "heroCallToActionLink":"#",
+      "heroCallToAction":"Get Started",
+      "linkAccessibilityLabel":"",
+      "heroSecondaryCallToActionLink":"#",
+      "heroSecondaryCallToAction":"View Documentation",
+      "secondaryLinkAccessibilityLabel":""
+}]
+  

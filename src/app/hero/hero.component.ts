@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ContentfulService } from '../contentful.service';
 import { Entry } from 'contentful';
-
 @Component({
   selector: 'app-hero',
   templateUrl: './hero.component.html',
@@ -9,15 +8,29 @@ import { Entry } from 'contentful';
 })
 export class HeroComponent implements OnInit {
 
-  private hero: Entry<any>[] = [];
+ heroContent = [{
+  "accessibility": {
+    "role":"banner",
+    "label":"Secure end-to-end procurement platform",
+  },
+    "image":"assets/images/hero/man-in-city.jpg",
+    "header":"Secure end-to-end procurement platform",
+    "subHeader":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor.",
+    "heroCallToActionLink":"#",
+    "heroCallToAction":"Get Started",
+    "linkAccessibilityLabel":"",
+    "heroSecondaryCallToActionLink":"#",
+    "heroSecondaryCallToAction":"View Documentation",
+    "secondaryLinkAccessibilityLabel":""
+}]
 
 
-  constructor(private contentfulService: ContentfulService) { }
+public hero: any;
 
+  constructor() { }
 
   
   ngOnInit() {
-    this.contentfulService.getHero()
-    .then(hero => this.hero = hero);
+    console.log(this.heroContent);
     }
 }

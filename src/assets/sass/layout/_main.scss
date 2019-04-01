@@ -179,7 +179,6 @@ body {
             width: 250px;
             height: 145px;
             text-align: center;
-            background: url("../images/profile-bg.png") top left no-repeat;
             background-size: 250px 145px;
             @include shadow(0 2px 5px 0 rgba(0,0,0,0.16));
 
@@ -227,7 +226,6 @@ body {
             background-color: $darkMenuBgColor;
 
             .profile {
-                background-image: url("../images/profile-bg-dark.png");
 
                 .profile-name {
                     color: $darkMenuColor;
@@ -1408,7 +1406,6 @@ body {
                                 vertical-align: middle;
                                 width: 24px;
                                 height: 24px;
-                                background: url("../images/avatar.png") top left no-repeat;
                                 background-size: 24px 24px;
                                 margin-right: 14px;
                             }

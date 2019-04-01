@@ -1,107 +1,21 @@
-<nav *ngFor="let navigation of navigation">
+<nav *ngFor="let navigation of navbarContent">
 <div class="header-top clearfix">
-      <a href="#"><img class="logo" src="{{navigation.fields.logo.fields.file.url}}" alt="{{navigation.fields.logo.fields.description}}" title="logo"></a>
+        <a href="{{navigation.logo.url}}"><img class="logo" src="{{navigation.logo.image}}" alt="{{navigation.logo.alt}}" title="{{navigation.logo.title}}"></a>
       <div class="menu animated" id="menu" [ngClass]=" navbarOpen ? 'show lmenu-active fadeInDown' : 'fadeOutUp'">
-          <ul class="menu-items center">
-           <li>
-             <a [routerLink]="['']" fragment="{{navigation.fields.link1Url}}" (click)="goToRoute('navigation.fields.link1Url')">{{navigation.fields.lInk1Text}}</a>
-           </li>
-           <li>
-             <a [routerLink]="['']" fragment="{{navigation.fields.link2Url}}" (click)="goToRoute('navigation.fields.link2Url')">{{navigation.fields.link2Text}}</a>
-           </li>
-            <li>
-             <a [routerLink]="['']" fragment="{{navigation.fields.link3Url}}" (click)="goToRoute('navigation.fields.link3Url')">{{navigation.fields.link3Text}}</a>
-           </li>
-           <li>
-             <a [routerLink]="['']" fragment="{{navigation.fields.link4Url}}" (click)="goToRoute('navigation.fields.link4Url')">{{navigation.fields.link4Text}}</a>
+          <ul class="menu-items">
+           <li *ngFor="let links of navigation.links">
+             <a [routerLink]="['']" fragment="{{links.linkUrl}}" (click)="goToRoute('links.linkUrl')">{{links.linkText}}</a>
            </li>
          </ul>
           <ul>
             <li>
-              <a class="ui-button secondary" href="{{navigation.fields.link5Url}}" role="button">
-              {{navigation.fields.link5Text}}</a>
-              <a href="{{navigation.fields.link6Url}}" class="ui-button" role="button">{{navigation.fields.link6Text}}</a>
+              <a *ngFor="let button of navigation.navButtons" class="{{button.class}}" href="{{button.linkUrl}}" role="button">
+              {{button.linkText}}</a>
             </li>
         </ul>
        </div>
-       <a id="menu-button" (click)="toggleNavbar()" href="#">
+       <a id="menu-button" (click)="toggleNavbar()">
           <i class="material-icons">menu</i>
       </a>
       </div>
     </nav>
-
-
-<!-- <ul id="menu" class="animated" [ngClass]=" navbarOpen ? 'show lmenu-active fadeInDown' : 'fadeOutUp'">
-  <li><a href="#"><i class="ui-icon ui-icon-home"></i><span>Home</span></a></li>
-  <li><a href="#introduction"><i class="ui-icon ui-icon-open-in-browser"></i><span>Introduction</span></a></li>
-  <li><a href="#features"><i class="ui-icon ui-icon-list"></i><span>Features</span></a></li>
-  <li><a href="#promotion"><i class="ui-icon ui-icon-group-work"></i><span>Promotion</span></a></li>
-  <li><a href="#pricing"><i class="ui-icon ui-icon-attach-money"></i><span>Pricing</span></a></li>
-  <li><a href="#video"><i class="ui-icon ui-icon-videocam"></i><span>Video</span></a></li>
-</ul> -->
-
-<!-- <nav *ngFor="let navigation of navigation">
-  <div class="header-top clearfix">
-      <div class="">
-        <a href="#"><img class="logo" src="{{navigation.fields.logo.fields.file.url}}" alt="{{navigation.fields.logo.fields.description}}" title="logo"></a>
-      </div>
-      <a id="menu-button" class="menu-button" href="#">
-          <i class="material-icons">menu</i>
-      </a>
-      <div class="menu animated" id="menu">
-       <ul class="menu-items center">
-        <li>
-          <a [routerLink]="['']" fragment="{{navigation.fields.link1Url}}" (click)="goToRoute('navigation.fields.link1Url')">{{navigation.fields.lInk1Text}}</a>
-        </li>
-        <li>
-          <a [routerLink]="['']" fragment="{{navigation.fields.link2Url}}" (click)="goToRoute('navigation.fields.link2Url')">{{navigation.fields.link2Text}}</a>
-        </li>
-         <li>
-          <a [routerLink]="['']" fragment="{{navigation.fields.link3Url}}" (click)="goToRoute('navigation.fields.link3Url')">{{navigation.fields.link3Text}}</a>
-        </li>
-        <li>
-          <a [routerLink]="['']" fragment="{{navigation.fields.link4Url}}" (click)="goToRoute('navigation.fields.link4Url')">{{navigation.fields.link4Text}}</a>
-        </li>
-      </ul>
-        <ul>
-          <li>
-            <a class="ui-button secondary" href="" role="button">
-             {{navigation.fields.link5Text}}</a>
-            <a href="" class="ui-button" role="button">{{navigation.fields.link6Text}}</a>
-          </li>
-      </ul>
-    </div>
-  </div>
-  </nav> -->
-
-
-<!-- <nav *ngFor="let navigation of navigation" class="navbar navbar-expand-lg navbar-light bg-white fixed-top primary-navigation">
-  <div class="container-fluid">
-  <a class="navbar-brand pt-0 pb-0" href="#"><img src="{{navigation.fields.logo.fields.file.url}}" alt="{{navigation.fields.logo.fields.description}}" title="logo"></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto mx-auto pl-2">
-      <li class="nav-item mx-auto px-2">
-        <a class="nav-link text-capitalize font-weight-light" [routerLink]="['']" fragment="{{navigation.fields.link1Url}}" (click)="goToRoute('navigation.fields.link1Url')">{{navigation.fields.lInk1Text}}</a>
-      </li>
-      <li class="nav-item mx-auto px-2">
-        <a class="nav-link text-capitalize font-weight-light"  [routerLink]="['']" fragment="{{navigation.fields.link2Url}}" (click)="goToRoute('navigation.fields.link2Url')">{{navigation.fields.link2Text}}</a>
-      </li>
-       <li class="nav-item mx-auto px-2">
-        <a class="nav-link text-capitalize font-weight-light"  [routerLink]="['']" fragment="{{navigation.fields.link3Url}}" (click)="goToRoute('navigation.fields.link3Url')">{{navigation.fields.link3Text}}</a>
-      </li>
-      <li class="nav-item mx-auto px-2">
-        <a class="nav-link text-capitalize font-weight-light"  [routerLink]="['']" fragment="{{navigation.fields.link4Url}}" (click)="goToRoute('navigation.fields.link4Url')">{{navigation.fields.link4Text}}</a>
-      </li>
-    </ul>
-    <ul class="nav justify-content-end pt-4 pt-md-0">
-      <li class="nav-item mx-auto">
-        <a class="btn btn-raised btn-secondary mr-2" href="" role="button">{{navigation.fields.link5Text}}</a>
-        <a href="" class="btn btn-raised btn-primary" role="button">{{navigation.fields.link6Text}}</a>
-      </li>
-    </ul>
-  </div>
-</div>
-</nav> -->

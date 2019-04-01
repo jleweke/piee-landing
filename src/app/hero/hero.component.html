@@ -1,11 +1,11 @@
-<section *ngFor="let hero of hero" class="hero parallax" attr.role={{hero.fields.accessibilityRole}} attr.aria-label={{hero.fields.accessibilityLabel}} [ngStyle]="{'background-image':'url('+ hero.fields.heroImage.fields.file.url +')'}">
+<section *ngFor="let hero of heroContent" class="hero parallax" attr.role={{hero.accessibility.role}} attr.aria-label={{hero.accessibility.label}} [ngStyle]="{'background-image':'url('+ hero.image +')'}">
   <div class="overlay"></div>
   <div class="header-content">
-  <h1 class="font-weight-bold">{{ hero.fields.heroHeader }}</h1>
-    <p class="lead p-lg-6 p-lg-offset-3">{{ hero.fields.heroSubHeader }}</p>
+  <h1 class="font-weight-bold">{{ hero.header }}</h1>
+    <p class="lead p-lg-6 p-lg-offset-3">{{ hero.subHeader }}</p>
     <p>
-      <a href="{{hero.fields.heroCallToActionLink}}" class="ui-button" role="button" attr.aria-label={{hero.fields.linkAccessibilityLabel}}>{{ hero.fields.heroCallToAction }}</a>
-      <a *ngIf="hero.fields.heroSecondaryCallToAction" href="{{hero.fields.heroSecondaryCallToActionLink}}" class="ui-button secondary ui-secondary-button-transparent" role="button" attr.aria-label={{hero.fields.secondaryLinkAccessibilityLabel}}>{{ hero.fields.heroSecondaryCallToAction }}</a>
+      <a href="{{hero.heroCallToActionLink}}" class="ui-button" role="button" attr.aria-label={{hero.linkAccessibilityLabel}}>{{ hero.heroCallToAction }}</a>
+      <a *ngIf="hero.heroSecondaryCallToAction" href="{{hero.heroSecondaryCallToActionLink}}" class="ui-button secondary ui-secondary-button-transparent" role="button" attr.aria-label={{hero.secondaryLinkAccessibilityLabel}}>{{ hero.heroSecondaryCallToAction }}</a>
     </p>    
 </div>
 </section>

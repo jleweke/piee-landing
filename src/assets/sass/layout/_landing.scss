@@ -151,7 +151,7 @@
                         font-weight: $fontWeightBold;
                         text-transform: uppercase;
                     
-                        &:hover {
+                        &:hover, &:focus {
                             color: $primaryColor;
                         }
                     }
@@ -498,12 +498,13 @@
                 #menu {
                     z-index: 100;
                     position: fixed;
-                    top: 86px;
-                    right: 30px;
+                    top: 95px;
+                    right: 18px;
                     float: none;
                     display: none;
                     margin: 0;
                     padding: 0;
+                    text-align: left;
                     width: 225px;
                     list-style: none;
                     background-color: $primaryWhite;
@@ -557,29 +558,7 @@
             }
         }  
         
-        // #features, #promotion, #pricing, #video, .footer .footer-content {
-        //     width: 100%;
-        //     padding-right: 30px;
-        //     padding-left: 30px;
-        //     box-sizing: border-box;
-        // } 
-        
-        // #promotion {
-
-        //     .ui-lg-8 {
-        //         padding: 100px 0 30px;
-        //         text-align: center;
-                
-        //         h1 {
-        //             margin-top: -30px;
-        //             font-weight: 48px;
-        //             color: $primaryWhite;
-        //             font-weight: 400;
-        //         }
-        //     }
-        // }
-        
-        #video {           
+       #video {           
            .video-content {
                width: 100%;
                

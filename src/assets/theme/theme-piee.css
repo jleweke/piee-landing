@@ -5952,6 +5952,13 @@ body .ui-accordion .ui-accordion-header > a {
   padding: 0.625em 1em;
   color: #212121;
 }
+body .ui-accordion .ui-accordion-header > a:focus {
+  background-color: #3DB1F2;
+  color: #ffffff;
+}
+body .ui-accordion .ui-accordion-header > a:focus .fa {
+  color: #ffffff;
+}
 body .ui-accordion .ui-accordion-header > a .ui-accordion-toggle-icon,
 body .ui-accordion .ui-accordion-header > a .ui-accordion-header-text {
   vertical-align: middle;

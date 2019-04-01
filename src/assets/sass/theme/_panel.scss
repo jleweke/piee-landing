@@ -93,7 +93,15 @@ body {
             > a {
                 padding: $headerPadding;
                 color: $textColor;
-                                
+                
+                &:focus {
+                    background-color: $accentColor;
+                    color: $accentTextColor;
+                    .fa {
+                        color: $primaryWhite;
+                    }
+                }
+
                 .ui-accordion-toggle-icon,
                 .ui-accordion-header-text {
                     // padding-left: $mediumPadding;
