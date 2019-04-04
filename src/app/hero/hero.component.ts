@@ -11,17 +11,17 @@ export class HeroComponent implements OnInit {
  heroContent = [{
   "accessibility": {
     "role":"banner",
-    "label":"Secure end-to-end procurement platform",
+    "label":"Procurement Integrated Enterprise Environment",
   },
     "image":"assets/images/hero/man-in-city.jpg",
-    "header":"Secure end-to-end procurement platform",
-    "subHeader":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor.",
-    "heroCallToActionLink":"#",
-    "heroCallToAction":"Get Started",
-    "linkAccessibilityLabel":"",
-    "heroSecondaryCallToActionLink":"#",
-    "heroSecondaryCallToAction":"View Documentation",
-    "secondaryLinkAccessibilityLabel":""
+    "header":"Procurement Integrated Enterprise Environment",
+    "subHeader":"Digitally and securely manage invoicing, contracts and property throughout every phase of the procurement lifecycle",
+    "heroCallToActionLink":"#benefits",
+    "heroCallToAction":"View Benefits",
+    "linkAccessibilityLabel":"View benefits of the Procurement Integrated Enterprise Environment",
+    "heroSecondaryCallToActionLink":"#features",
+    "heroSecondaryCallToAction":"View Featuers",
+    "secondaryLinkAccessibilityLabel":"View features of the Procurement Integrated Enterprise Environment"
 }]
 
 

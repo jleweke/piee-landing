@@ -4500,20 +4500,20 @@ body .ui-button, body .ui-datepicker-buttonpane > button {
   transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 body .ui-button:not(.secondary), body .ui-datepicker-buttonpane > button:not(.secondary) {
-  background-color: #3DB1F2;
+  background-color: #0D76BA;
   color: #ffffff;
   -moz-box-shadow: 8px 10px 20px 0 rgba(46, 61, 73, 0.15);
   -webkit-box-shadow: 8px 10px 20px 0 rgba(46, 61, 73, 0.15);
   box-shadow: 8px 10px 20px 0 rgba(46, 61, 73, 0.15);
 }
 body .ui-button:enabled:not(:focus):hover, body .ui-datepicker-buttonpane > button:enabled:not(:focus):hover {
-  background-color: #4895c6;
-  border-color: #4895c6;
+  background-color: #3DB1F2;
+  border-color: #3DB1F2;
   box-shadow: 2px 4px 8px 0 rgba(46, 61, 73, 0.2);
 }
 body .ui-button:focus, body .ui-datepicker-buttonpane > button:focus {
-  background-color: #4895c6;
-  border-color: #4895c6;
+  background-color: #3DB1F2;
+  border-color: #3DB1F2;
   box-shadow: 2px 4px 8px 0 rgba(46, 61, 73, 0.2);
 }
 body .ui-button .ui-button-text, body .ui-datepicker-buttonpane > button .ui-button-text {
@@ -4554,19 +4554,19 @@ body .ui-button.ui-secondary-button-transparent:focus, body .ui-datepicker-butto
 }
 body .ui-button.secondary, body .ui-button.ui-secondary-button, body .ui-datepicker-buttonpane > button.secondary, body .ui-datepicker-buttonpane > button.ui-secondary-button {
   background-color: #ffffff;
-  border: 1px solid #3DB1F2;
+  border: 1px solid #0D76BA;
   box-shadow: none;
-  color: #3DB1F2;
+  color: #0D76BA;
 }
 body .ui-button.secondary:enabled:not(:focus):hover, body .ui-button.ui-secondary-button:enabled:not(:focus):hover, body .ui-datepicker-buttonpane > button.secondary:enabled:not(:focus):hover, body .ui-datepicker-buttonpane > button.ui-secondary-button:enabled:not(:focus):hover {
-  background-color: #73b7e3;
-  border: 1px solid #73b7e3;
+  background-color: #3DB1F2;
+  border: 1px solid #3DB1F2;
   box-shadow: none;
   color: #ffffff;
 }
 body .ui-button.secondary:focus, body .ui-button.ui-secondary-button:focus, body .ui-datepicker-buttonpane > button.secondary:focus, body .ui-datepicker-buttonpane > button.ui-secondary-button:focus {
-  background-color: #73b7e3;
-  border: 1px solid #73b7e3;
+  background-color: #3DB1F2;
+  border: 1px solid #3DB1F2;
   box-shadow: none;
   color: #ffffff;
 }
@@ -6121,6 +6121,14 @@ body .ui-tabview.ui-tabview-right > .ui-tabview-nav > li > a {
 }
 body .ui-tabview.ui-tabview-right > .ui-tabview-nav > li.ui-state-active > a {
   padding-left: 0.875em;
+}
+
+.tall-panel .ui-card-body {
+  height: 320px;
+}
+
+.short-panel .ui-card-body {
+  height: 260px;
 }
 
 @media (max-width: 640px) {

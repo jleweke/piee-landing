@@ -10,9 +10,9 @@ import { Entry } from 'contentful';
 export class ContactComponent implements OnInit  {
 
 contactContent = [{
- "contactBlockId":"contact",
+ "contentBlockId":"contact",
  "title": "Get in touch",
- "subTitle": "",
+ "subTitle": "Not sure how to use a feature or need some help? Send us a secure message or give us a call.",
  "callToActionText":"Send a secure message",
  "callToActionLink":"https://wawf.eb.mil/xhtml/unauth/web/homepage/governmentCustomerSupport.xhtml",
  "feature": [{

@@ -65,6 +65,7 @@
     .lead {
         font-size: $fontSizeLead;
         font-weight: $fontWeightNormal;
+        line-height: $lineHeight;
         padding-top: $largePadding;
         padding-bottom: $largePadding;
     }
@@ -472,7 +473,7 @@
         }
 }
 }
-@media (max-width: 960px) {
+@media (max-width: 1024px) {
     
     .landing-wrapper {
         #header {

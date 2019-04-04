@@ -46,6 +46,15 @@
         color: $accentColorYellow;
     }
 }
+ul {
+    &.no-bullet {
+        list-style: none;
+        padding-left: 0px;
+        i {
+            vertical-align: bottom;
+        }
+    }
+}
 .text-uppercase {
     text-transform: uppercase;
 }

@@ -4,13 +4,13 @@
       <h2 class="display-3 h2 font-weight-bold" [ngClass]="!benefits.subTitle ? 'mb-5 pb-3' : ''">{{benefits.title}}<span class="text-yellow">.</span></h2>
       <p *ngIf="benefits.subTitle" class="lead">{{benefits.subTitle}}</p>
     </div>
-      <div *ngFor="let ben of benefits.feature" class="p-col-12 p-md-4 center">
+      <div *ngFor="let ben of benefits.feature" class="p-col-12 p-md-4 center tall-panel">
         <a class="no-decoration">
             <p-card header styleClass="ui-card-shadow interactive">
                 <p-header>
                     <img *ngFor="let image of ben.image" class="card-img-top" [alt]="image.alt" [title]="image.title" role="presentation" [src]="image.url">
                 </p-header>
-                <h3 class="card-title font-weight-bold">
+                <h3 class="card-title font-weight-bold display-5">
                       {{ben.highlightTitle}}
                   </h3>
                 <p class="card-text">{{ben.highlightText}}</p>

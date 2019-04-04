@@ -14,11 +14,11 @@ public faqs: any;
 faqsContent =[{
 "contentBlockId":"answers",
 "title":"Frequently asked questions",
-"subTitle":"",
-"callToActionText":"View all faqs",
-"callToActionLink":"",
+"subTitle":"Can’t find the answer you’re looking for? Send your question to the Ogden Help Desk through our secure messaging system. ",
+"callToActionText":"Send Us Your Question",
+"callToActionLink":"https://wawf.eb.mil/xhtml/unauth/web/homepage/governmentCustomerSupport.xhtml",
 "feature" :[{
-  "question":"How do I get started using the PIEE platform?",
+  "question":"How do I get started using PIEE?",
   "answer":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
   },
   {
@@ -26,11 +26,11 @@ faqsContent =[{
   "answer":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
   },
   {
-  "question":"How can I check the status of a payment?",
+  "question":"How can I check the status of a payment or invoice?",
   "answer":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
   },
   {
-  "question":"How do I approve an invoice?",
+  "question":"Who can I contact for help with PIEE?",
   "answer":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
   }]
 }]

@@ -240,7 +240,7 @@ body {
         @include transition(box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1));
 
         &:not(.secondary) {
-        background-color: $accentColor;
+        background-color: $primaryColor;
         color: $primaryWhite;
         -moz-box-shadow: 8px 10px 20px 0 rgba(46,61,73,.15);
         -webkit-box-shadow: 8px 10px 20px 0 rgba(46,61,73,.15);
@@ -248,14 +248,14 @@ body {
         }
 
         &:enabled:not(:focus):hover {
-            background-color: $accentDarkColor;
-            border-color: $accentDarkColor;
+            background-color: $accentColor;
+            border-color: $accentColor;
             box-shadow: 2px 4px 8px 0 rgba(46,61,73,.2);
         }
 
         &:focus {
-            background-color: $accentDarkColor;
-            border-color: $accentDarkColor;
+            background-color: $accentColor;
+            border-color: $accentColor;
             box-shadow: 2px 4px 8px 0 rgba(46,61,73,.2);
         }
 
@@ -302,20 +302,20 @@ body {
         }
         &.secondary, &.ui-secondary-button {
             background-color: $primaryWhite;
-            border: 1px solid $accentColor;
+            border: 1px solid $primaryColor;
             box-shadow: none;
-            color: $accentColor;
+            color: $primaryColor;
 
             &:enabled:not(:focus):hover {
-                background-color: $accentLightColor;
-                border: 1px solid $accentLightColor;
+                background-color: $accentColor;
+                border: 1px solid $accentColor;
                 box-shadow: none;
                 color: $primaryWhite;
             }
 
             &:focus {
-                background-color: $accentLightColor;
-                border: 1px solid $accentLightColor;
+                background-color: $accentColor;
+                border: 1px solid $accentColor;
                 box-shadow: none;
                 color: $primaryWhite;
             }

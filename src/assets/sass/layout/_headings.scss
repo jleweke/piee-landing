@@ -10,31 +10,36 @@
     h2, .h2 {
         font-size: $fontSizeLarge;
         font-weight: $fontWeightMedium;
+        line-height: $lineHeightMed;
         margin-bottom: $xlargeMargin; 
     }
     
     h3, .h3 {
         font-size: $fontSizeMedium;
-        font-weight: $fontWeightMedium;
+        font-weight: $fontWeightBold;
+        line-height: $lineHeightMed;
         margin-bottom: $xlargeMargin; 
     }
     
     h4, .h4 {
         font-size: $fontSizeLead;
         font-weight: $fontWeightMedium;
+        line-height: $lineHeightMed;
         margin-bottom: $xlargeMargin;    
     }
     h5, .h5 {
         font-size: $fontSizeLead;
         font-weight: $fontWeightMedium;
+        line-height: $lineHeightMed;
         margin-bottom: $xlargeMargin;    
     }
     h6, .h6 {
         font-size: $fontSize;
         font-weight: $fontWeightSemiBold;
-        margin-bottom: $xlargeMargin;    
+        line-height: $lineHeightMed;
+        margin-bottom: $largeMargin;    
     }
-    h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
         margin-bottom: $xlargeMargin;
     }
     .display-1, 

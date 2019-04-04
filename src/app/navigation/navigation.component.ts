@@ -17,20 +17,24 @@ export class NavigationComponent implements OnInit {
       "title":"PIEE logo"
     },
     "links": [{
-      "linkText":"What Is PIEE?",
+      "linkText":"About",
       "linkUrl":"about"
+    },
+    {
+      "linkText":"Benefits",
+      "linkUrl":"benefits",
     },
     {
       "linkText":"Features",
       "linkUrl":"features",
     },
     {
-      "linkText":"Capabilities",
-      "linkUrl":"benefits",
+      "linkText":"Resources",
+      "linkUrl":"answers",
     },
     {
-      "linkText":"Get Answers",
-      "linkUrl":"answers",
+      "linkText":"Contact",
+      "linkUrl":"contact",
     }],
     "navButtons": [{
       "class":"ui-button secondary",

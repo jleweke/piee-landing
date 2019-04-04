@@ -17,7 +17,6 @@ import { FooterComponent } from './footer/footer.component';
 import { HelpComponent } from './help/help.component';
 import { DataComponent } from './data/data.component';
 import { FaqsComponent } from './faqs/faqs.component';
-import { NavigationTopbarComponent } from './navigation-topbar/navigation-topbar.component';
 import { ContactComponent } from './contact/contact.component';
 
 //primeng modules
@@ -37,12 +36,8 @@ import {MenuModule} from 'primeng/primeng';
 import {MenubarModule} from 'primeng/primeng';
 import {MessagesModule} from 'primeng/primeng';
 import {OverlayPanelModule} from 'primeng/primeng';
-import {PaginatorModule} from 'primeng/primeng';
 import {PanelModule} from 'primeng/primeng';
 import {PanelMenuModule} from 'primeng/primeng';
-import {PasswordModule} from 'primeng/primeng';
-import {PickListModule} from 'primeng/primeng';
-import {ProgressBarModule} from 'primeng/primeng';
 import {RadioButtonModule} from 'primeng/primeng';
 import {ScrollPanelModule} from 'primeng/scrollpanel';
 import {SelectButtonModule} from 'primeng/primeng';
@@ -72,7 +67,6 @@ import {TooltipModule} from 'primeng/primeng';
     HelpComponent,
     DataComponent,
     FaqsComponent,
-    NavigationTopbarComponent,
     ContactComponent
   ],
   imports: [
@@ -85,7 +79,7 @@ import {TooltipModule} from 'primeng/primeng';
     CarouselModule,
     ColorPickerModule,
     ConfirmDialogModule,
-     ContextMenuModule,
+    ContextMenuModule,
     DialogModule,
     DropdownModule,
     HttpClientModule,
@@ -96,12 +90,8 @@ import {TooltipModule} from 'primeng/primeng';
     MenubarModule,
     MessagesModule,
     OverlayPanelModule,
-    PaginatorModule,
     PanelModule,
     PanelMenuModule,
-    PasswordModule,
-    PickListModule,
-    ProgressBarModule,
     RadioButtonModule,
     ScrollPanelModule,
     SelectButtonModule,

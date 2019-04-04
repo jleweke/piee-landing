@@ -281,7 +281,12 @@ body {
         }
     }
 }
-
+.tall-panel .ui-card-body {
+    height: 320px;
+}
+.short-panel .ui-card-body {
+    height: 260px;
+}
 @media (max-width: 640px) {
     body {
         .ui-toolbar {

@@ -97,6 +97,14 @@
   color: #FFBD03;
 }
 
+ul.no-bullet {
+  list-style: none;
+  padding-left: 0px;
+}
+ul.no-bullet i {
+  vertical-align: bottom;
+}
+
 .text-uppercase {
   text-transform: uppercase;
 }
@@ -420,8 +428,9 @@
   background-color: #3d91c7;
 }
 .landing-wrapper .lead {
-  font-size: 1.5em;
+  font-size: 1.25em;
   font-weight: 300;
+  line-height: 1.5em;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
@@ -594,7 +603,7 @@
   color: #212121;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1024px) {
   .landing-wrapper #header .header-top {
     align-items: center;
     background: #ffffff;
@@ -1983,34 +1992,39 @@ h1:first-child, .h1:first-child {
 h2, .h2 {
   font-size: 2.8125em;
   font-weight: 400;
+  line-height: 1.2;
   margin-bottom: 3rem;
 }
 
 h3, .h3 {
   font-size: 2.125em;
-  font-weight: 400;
+  font-weight: 700;
+  line-height: 1.2;
   margin-bottom: 3rem;
 }
 
 h4, .h4 {
-  font-size: 1.5em;
+  font-size: 1.25em;
   font-weight: 400;
+  line-height: 1.2;
   margin-bottom: 3rem;
 }
 
 h5, .h5 {
-  font-size: 1.5em;
+  font-size: 1.25em;
   font-weight: 400;
+  line-height: 1.2;
   margin-bottom: 3rem;
 }
 
 h6, .h6 {
   font-size: 1em;
   font-weight: 500;
-  margin-bottom: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
 }
 
-h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   margin-bottom: 3rem;
 }
 
@@ -2040,7 +2054,7 @@ h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 
 .display-5 {
-  font-size: 1.5em;
+  font-size: 1.25em;
 }
 
 @media (max-width: 768px) {
@@ -2060,19 +2074,19 @@ h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   }
 
   h3, .h3 {
-    font-size: 1.5em;
+    font-size: 1.25em;
     font-weight: 400;
     margin-bottom: 3rem;
   }
 
   h4, .h4 {
-    font-size: 1.5em;
+    font-size: 1.25em;
     font-weight: 400;
     margin-bottom: 3rem;
   }
 
   h5, .h5 {
-    font-size: 1.5em;
+    font-size: 1.25em;
     font-weight: 400;
     margin-bottom: 3rem;
   }
@@ -2109,11 +2123,11 @@ h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   }
 
   .display-4 {
-    font-size: 1.5em;
+    font-size: 1.25em;
   }
 
   .display-5 {
-    font-size: 1.5em;
+    font-size: 1.25em;
   }
 }
 /* top padding */

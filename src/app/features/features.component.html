@@ -18,11 +18,11 @@
      <div class="p-col-12 p-md-6">
          <div class="card no-shadow border-0">
              <div class="card-body">
-             <h3 class="display-4 font-weight-bold pb-3">{{item.highlightTitle}}</h3>
+             <h3 class="display-4 font-weight-bold">{{item.highlightTitle}}</h3>
              <p *ngIf="item.highlightText" class="card-text">
                {{item.highlightText}}</p>
-             <ul *ngIf="item.highlightList" class="list-group">
-                <li *ngFor="let list of item.highlightList" class="list-group-item py-1"><i class="material-icons text-primary">check</i> {{list}} </li>
+             <ul *ngIf="item.highlightList" class="list-group no-bullet">
+                <li *ngFor="let list of item.highlightList" class="list-group-item py-1"><i class="material-icons text-primary">check</i> {{list.listItem}} </li>
              </ul>
              <a *ngIf="item.highlightLinkText" href="#" class="ui-button text-button" role="button" attr.aria-label={{item.highlightLinkAccessibilityLabel}}>{{item.highlightLinkText}}</a>
            </div>

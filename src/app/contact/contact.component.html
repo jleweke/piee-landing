@@ -2,7 +2,7 @@
     <div class="p-grid p-align-center container pb-5">
       <div class="p-col-12 p-lg-6">
           <h2 class="display-3 h2 font-weight-bold" [ngClass]="!contact.subTitle ? 'mb-5 pb-3' : ''">{{contact.title}}<span class="text-yellow">.</span></h2>
-          <p *ngIf="contact.subTitle" class="lead">{{contact.subTitle}}</p>
+          <p *ngIf="contact.subTitle" class="lead pr-5">{{contact.subTitle}}</p>
           <a *ngIf="contact.callToActionText" [href]="contact.callToActionLink" class="ui-button secondary ui-secondary-button-transparent" role="button" >{{contact.callToActionText}}</a>
       </div>
         <div class="p-col-12 p-lg-6 mt-4">
