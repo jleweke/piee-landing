@@ -9,7 +9,6 @@ import { HeroComponent } from './hero/hero.component';
 import { ClientsComponent } from './clients/clients.component';
 import { HomeComponent } from './home/home.component';
 import { FeaturesComponent } from './features/features.component';
-import { FeaturesAltComponent } from './features-alt/features-alt.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { BenefitsComponent } from './benefits/benefits.component';
 import { AboutComponent } from './about/about.component';
@@ -59,7 +58,6 @@ import {TooltipModule} from 'primeng/primeng';
     ClientsComponent,
     HomeComponent,
     FeaturesComponent,
-    FeaturesAltComponent,
     NavigationComponent,
     BenefitsComponent,
     AboutComponent,
