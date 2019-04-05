@@ -14,84 +14,120 @@ export class FooterComponent implements OnInit {
       "sectionTitle":"About",
       "link": [
         {
-        "linkText":"Lorem ipsum",
+        "linkText":"PIEE Overview",
         "url":""
         },
         {
-        "linkText":"Lorem ipsum",
+        "linkText":"PIEE Latest Enhancements",
         "url":""
         },
         {
-        "linkText":"Lorem ipsum",
+        "linkText":"Procure to Pay Summary",
         "url":""
         },
         {
-        "linkText":"Lorem ipsum",
+        "linkText":"WAWF Overview",
         "url":""
-        },      
+        },
+        {
+        "linkText":"WAWF Special Feature",
+        "url":""
+        },         
       ]
       },
       {
       "sectionTitle":"Support",
       "link": [
         {
-        "linkText":"Lorem ipsum",
+        "linkText":"Help Desk",
         "url":""
         },
         {
-        "linkText":"Lorem ipsum",
+        "linkText":"Documentation",
         "url":""
         },
         {
-        "linkText":"Lorem ipsum",
+        "linkText":"Glossary",
         "url":""
         },
         {
-        "linkText":"Lorem ipsum",
+        "linkText":"Lookup Tables",
         "url":""
-        },      
+        }, 
+        {
+        "linkText":"Solicitation Search",
+        "url":""
+        },   
+        {
+        "linkText":"Purpose Code Management",
+        "url":""
+        },   
+        {
+        "linkText":"WAWF Users Manual",
+        "url":""
+        },  
+        {
+        "linkText":"Government Support",
+        "url":""
+        },    
+        {
+          "linkText":"Vendor Support",
+          "url":""
+        }
       ]
       },
       {
       "sectionTitle":"Get Started",
       "link": [
         {
-        "linkText":"Lorem ipsum",
+        "linkText":"Log In",
         "url":""
         },
         {
-        "linkText":"Lorem ipsum",
+        "linkText":"Register",
         "url":""
         },
         {
-        "linkText":"Lorem ipsum",
+        "linkText":"Machine Setup Instructions",
         "url":""
         },
         {
-        "linkText":"Lorem ipsum",
+        "linkText":"Get Started – Vendors",
         "url":""
-        },      
+        },     
+        {
+        "linkText":"Get Started – Government",
+        "url":""
+        },
+        {
+        "linkText":"Get Started – Contractors",
+        "url":""
+        },
+        {
+        "linkText":"Get Started – New Federal Customers",
+        "url":""
+        } 
       ]
       },
       {
       "sectionTitle":"Contact Us",
       "link": [
         {
-        "linkText":"Lorem ipsum",
+        "linkText":"Email the Help Desk",
         "url":""
         },
         {
-        "linkText":"Lorem ipsum",
+        "linkText":"Open a Ticket – Vendors",
         "url":""
         },
         {
-        "linkText":"Lorem ipsum",
+        "linkText":"Open a Ticket - Government",
         "url":""
         },
         {
-        "linkText":"Lorem ipsum",
+        "linkText":"866.618.5988",
         "url":""
-        }      
+        } 
       ]
       }],   
     "images": [{

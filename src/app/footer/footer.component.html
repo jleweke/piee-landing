@@ -1,7 +1,7 @@
 <footer>
   <div *ngFor="let footer of footerContent">
     <div class="bg-dark py-5">
-      <div class="p-grid container p-justify-center">
+      <div class="p-grid p-justify-center">
         <div *ngFor="let footerLinks of footer.footerLinks" class="p-col-6 p-md-6 p-lg-2">
           <div class="text-uppercase font-weight-bold mr-3">
               {{footerLinks.sectionTitle}}
@@ -9,7 +9,7 @@
           <div class="footer-links font-weight-light">
             <ul>
               <li *ngFor="let link of footerLinks.link">
-                <a class="text-white" [href]="link.url">{{link.linkText}}</a>
+                <a class="text-white" [href]="link.url"><small>{{link.linkText}}</small></a>
               </li>
             </ul>
           </div> 
@@ -26,7 +26,7 @@
   <div class="bg-gray">
     <div class="p-grid container p-justify-center">
       <div class="footer-links text-center py-2 font-weight-light text-white">
-          <div class="p-col"><a *ngFor="let link of footer.bottomLinks" class="text-white pr-4">{{link.linkText}}</a></div>
+          <div class="p-col"><small><a *ngFor="let link of footer.bottomLinks" class="text-white pr-4">{{link.linkText}}</a>This is an official website of the U.S. government.</small></div>
         </div>
       </div>
   </div>
