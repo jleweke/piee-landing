@@ -11,7 +11,7 @@ export class NavigationComponent implements OnInit {
 
   navbarContent = [{
     "logo": {
-      "image":"assets/images/piee-logo.png",
+      "image":"assets/images/piee-logo.svg",
       "url":"#",
       "alt":"Procurement Integrated Enterprise Environment (PIEE)",
       "title":"PIEE logo"
