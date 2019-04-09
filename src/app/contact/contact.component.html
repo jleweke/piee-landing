@@ -8,7 +8,7 @@
         <div class="p-col-12 p-lg-6 mt-4">
           <div *ngFor="let contact of contact.feature" class="">
               <h3 *ngIf="contact.highlightTitle">{{contact.highlightTitle}}</h3>
-              <p *ngIf="contact.highlightSubtitle" class="display-3 font-weight-bold">{{contact.highlightSubtitle}}</p>
+              <p *ngIf="contact.highlightSubtitle" class="display-3 font-weight-bold"><a [href]="contact.highlightLink" style="color:#ffffff">{{contact.highlightSubtitle}}</a></p>
               <a *ngIf="contact.highlightLinkText" href="{{contact.highlightLink}}}" class="ui-button secondary" role="button" >{{contact.highlightLinkText}}</a>
           </div>
         </div>

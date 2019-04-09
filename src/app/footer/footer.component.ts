@@ -126,7 +126,7 @@ export class FooterComponent implements OnInit {
         },
         {
         "linkText":"866.618.5988",
-        "url":""
+        "url":"tel:866.618.5988"
         } 
       ]
       }],   

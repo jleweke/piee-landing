@@ -20,7 +20,7 @@ export class HeroComponent implements OnInit {
     "heroCallToAction":"View Benefits",
     "linkAccessibilityLabel":"View benefits of the Procurement Integrated Enterprise Environment",
     "heroSecondaryCallToActionLink":"#features",
-    "heroSecondaryCallToAction":"View Featuers",
+    "heroSecondaryCallToAction":"View Features",
     "secondaryLinkAccessibilityLabel":"View features of the Procurement Integrated Enterprise Environment"
 }]
 

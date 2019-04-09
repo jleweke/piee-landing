@@ -20,7 +20,7 @@ contactContent = [{
     "highlightSubtitle":"866.618.5988",
     "highlightText":"",
     "highlightLinkText":"",
-    "highlightLink":"",
+    "highlightLink":"tel:866.618.5988",
     "highlightLinkAccessibilityLabel":""
     }]
 }]
