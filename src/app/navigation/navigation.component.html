@@ -1,21 +1,33 @@
 <nav *ngFor="let navigation of navbarContent">
-<div class="header-top clearfix">
-        <a href="{{navigation.logo.url}}"><img class="logo" src="{{navigation.logo.image}}" alt="{{navigation.logo.alt}}" title="{{navigation.logo.title}}"></a>
-      <div class="menu animated" id="menu" [ngClass]=" navbarOpen ? 'show lmenu-active fadeInDown' : 'fadeOutUp'">
-          <ul class="menu-items">
-           <li *ngFor="let links of navigation.links">
-             <a [routerLink]="['']" fragment="{{links.linkUrl}}" (click)="goToRoute('links.linkUrl')">{{links.linkText}}</a>
-           </li>
-         </ul>
-          <ul>
-            <li>
-              <a *ngFor="let button of navigation.navButtons" class="{{button.class}}" href="{{button.linkUrl}}" role="button">
-              {{button.linkText}}</a>
-            </li>
-        </ul>
-       </div>
-       <a id="menu-button" (click)="toggleNavbar()">
-          <i class="material-icons">menu</i>
-      </a>
-      </div>
-    </nav>
+<div class="header-top">
+  <div>
+        <a class="lg-res" href="{{navigation.logo.url}}"><img class="logo" src="{{navigation.logo.image}}" alt="{{navigation.logo.alt}}" title="{{navigation.logo.title}}"></a>
+        <a class="sm-res" href="{{navigation.logo.url}}"><img class="logo" src="{{navigation.logo.icon}}" alt="{{navigation.logo.alt}}" title="{{navigation.logo.title}}"></a>
+  </div>
+
+  <div class="menu animated" id="menu" [ngClass]=" navbarOpen ? 'show lmenu-active fadeInDown' : 'fadeOutUp'">
+      <ul class="menu-items">
+        <li *ngFor="let links of navigation.links">
+          <a [routerLink]="['']" fragment="{{links.linkUrl}}" (click)="goToRoute('links.linkUrl')">{{links.linkText}}</a>
+        </li>
+      </ul>
+  </div>   
+
+  <div>
+    <div>
+    <ul class="no-bullet">
+      <li>
+        <a *ngFor="let button of navigation.navButtons" class="{{button.class}}" href="{{button.linkUrl}}" role="button">
+        {{button.linkText}}</a>
+      </li>
+    </ul>
+    </div>
+    <div>
+    <a id="menu-button" (click)="toggleNavbar()">
+      <i *ngIf="!navbarOpen" class="material-icons">menu</i>
+      <i *ngIf="navbarOpen" class="material-icons">close</i>
+    </a>
+  </div>
+  </div>
+    </div>
+  </nav>

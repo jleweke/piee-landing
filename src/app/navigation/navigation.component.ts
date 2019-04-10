@@ -14,7 +14,8 @@ export class NavigationComponent implements OnInit {
       "image":"assets/images/piee-logo.svg",
       "url":"#",
       "alt":"Procurement Integrated Enterprise Environment (PIEE)",
-      "title":"PIEE logo"
+      "title":"PIEE logo",
+      "icon":"assets/images/piee-icon.svg"
     },
     "links": [{
       "linkText":"About",

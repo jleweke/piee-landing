@@ -1,4 +1,4 @@
-<section *ngFor="let features of featuresContent" id="{{features.contentBlockId}}" role="complimentary" class="pt-5">
+<section *ngFor="let features of featuresContent" id="{{features.contentBlockId}}" role="complementary" class="pt-5">
   <div class="p-grid container">
     <div class="p-col-12 center">
       <h2 class="display-3 h2 font-weight-bold" [ngClass]="!features.subtitle ? 'mb-5 pb-3' : ''">{{features.title}}<span class="text-yellow">.</span></h2>
@@ -17,14 +17,15 @@
     <!--/-->   
      <div class="p-col-12 p-md-6">
          <div class="card no-shadow border-0">
-             <div class="card-body">
-             <h3 class="display-4 font-weight-bold">{{item.highlightTitle}}</h3>
-             <p *ngIf="item.highlightText" class="card-text">
-               {{item.highlightText}}</p>
-             <ul *ngIf="item.highlightList" class="list-group no-bullet">
-                <li *ngFor="let list of item.highlightList" class="list-group-item py-1"><i class="material-icons text-primary">check</i> {{list.listItem}} </li>
+            <h3 class="font-weight-bold">{{item.highlightTitle}}</h3>
+             <div *ngFor="let content of item.highlightContent" class="card-body mb-5">
+             <h4>{{content.highlightSubtitle}}</h4>
+             <p *ngIf="content.highlightText" class="card-text">
+               {{content.highlightText}}</p>
+             <ul *ngIf="content.highlightList" class="list-group no-bullet">
+                <li *ngFor="let list of content.highlightList" class="list-group-item py-1"><i class="material-icons text-primary">check</i> {{list.listItem}} </li>
              </ul>
-             <a *ngIf="item.highlightLinkText" href="#" class="ui-button text-button" role="button" attr.aria-label={{item.highlightLinkAccessibilityLabel}}>{{item.highlightLinkText}}</a>
+             <a *ngIf="content.highlightLinkText" href="#" class="ui-button text-button" role="button" attr.aria-label={{content.highlightLinkAccessibilityLabel}}>{{content.highlightLinkText}}</a>
            </div>
          </div>
        </div>

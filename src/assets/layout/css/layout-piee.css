@@ -480,11 +480,32 @@ ul.no-bullet i {
   /*new*/
   display: flex;
 }
+.landing-wrapper #header .header-top .sm-res {
+  display: none;
+}
+@media (max-width: 768px) {
+  .landing-wrapper #header .header-top .sm-res {
+    display: block;
+  }
+}
+.landing-wrapper #header .header-top .lg-res {
+  display: block;
+}
+@media (max-width: 768px) {
+  .landing-wrapper #header .header-top .lg-res {
+    display: none;
+  }
+}
 .landing-wrapper #header .header-top .logo {
   float: left;
   margin-right: 1rem;
   vertical-align: middle;
   max-width: 200px;
+}
+@media (max-width: 768px) {
+  .landing-wrapper #header .header-top .logo {
+    max-width: 57px;
+  }
 }
 .landing-wrapper #header .header-top #menu {
   list-style: none;
@@ -521,14 +542,14 @@ ul.no-bullet i {
   display: block;
 }
 .landing-wrapper #header .header-top #menu-button {
-  color: #3DB1F2;
+  color: #0D76BA;
   display: none;
   flex-grow: 1;
-  height: 36px;
   text-align: right;
 }
 .landing-wrapper #header .header-top #menu-button i {
-  font-size: 2.8125em;
+  color: #0D76BA;
+  font-size: 3.5em;
 }
 .landing-wrapper #header .header-content {
   margin: 0 auto;
@@ -564,6 +585,8 @@ ul.no-bullet i {
 }
 .landing-wrapper .ui-card.horizontal img {
   max-height: 400px;
+  position: sticky;
+  top: 100px;
 }
 .landing-wrapper footer a:hover {
   color: #FFBD03;
@@ -608,6 +631,7 @@ ul.no-bullet i {
     align-items: center;
     background: #ffffff;
     display: flex;
+    justify-content: space-between;
     padding: 0.5rem 1rem;
     position: fixed;
     left: 0;
@@ -618,13 +642,21 @@ ul.no-bullet i {
     -moz-box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.1);
   }
+  .landing-wrapper #header .header-top > div:last-child {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .landing-wrapper #header .header-top .ui-button {
+    margin-bottom: 0px;
+  }
   .landing-wrapper #header .header-top #menu-button {
     display: inline-block;
   }
   .landing-wrapper #header .header-top #menu {
     z-index: 100;
     position: fixed;
-    top: 95px;
+    top: 89px;
     right: 18px;
     float: none;
     display: none;
@@ -657,6 +689,13 @@ ul.no-bullet i {
     transition: background-color 0.3s;
     overflow: hidden;
   }
+}
+@media (max-width: 1024px) and (max-height: 405px) {
+  .landing-wrapper #header .header-top #menu li a {
+    padding: 10px 16px;
+  }
+}
+@media (max-width: 1024px) {
   .landing-wrapper #header .header-top #menu li a i {
     color: #757575;
     display: inline-block;
@@ -664,19 +703,27 @@ ul.no-bullet i {
     margin-right: 12px;
     font-size: 24px;
   }
+}
+@media (max-width: 1024px) {
   .landing-wrapper #header .header-top #menu li a:hover {
     background-color: #e8e8e8;
   }
+}
+@media (max-width: 1024px) {
   .landing-wrapper #header .header-top #menu li a span {
     display: inline-block;
     vertical-align: middle;
   }
+}
+@media (max-width: 1024px) {
   .landing-wrapper #header .header-content {
     box-sizing: border-box;
   }
   .landing-wrapper #header .header-content h1 {
     font-weight: 400;
   }
+}
+@media (max-width: 1024px) {
   .landing-wrapper #video .video-content {
     width: 100%;
   }
@@ -684,6 +731,8 @@ ul.no-bullet i {
     width: 350px;
     height: 220px;
   }
+}
+@media (max-width: 1024px) {
   .landing-wrapper .footer .footer-content {
     text-align: center;
   }
@@ -1993,28 +2042,28 @@ h2, .h2 {
   font-size: 2.8125em;
   font-weight: 400;
   line-height: 1.2;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 h3, .h3 {
   font-size: 2.125em;
   font-weight: 700;
   line-height: 1.2;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 h4, .h4 {
   font-size: 1.25em;
   font-weight: 400;
   line-height: 1.2;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 h5, .h5 {
   font-size: 1.25em;
   font-weight: 400;
   line-height: 1.2;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 h6, .h6 {
@@ -2025,7 +2074,7 @@ h6, .h6 {
 }
 
 h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .display-1,
@@ -2070,35 +2119,35 @@ h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   h2, .h2 {
     font-size: 2.125em;
     font-weight: 400;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
 
   h3, .h3 {
     font-size: 1.25em;
     font-weight: 400;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
 
   h4, .h4 {
     font-size: 1.25em;
     font-weight: 400;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
 
   h5, .h5 {
     font-size: 1.25em;
     font-weight: 400;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
 
   h6, .h6 {
     font-size: 1em;
     font-weight: 500;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
 
   h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
 
   .display-1,

@@ -10,7 +10,7 @@
       <a class="no-decoration" attr.aria-label={{resource.highlightLinkAccessibilityLabel}} href="resource.highlightLink">
         <p-card header styleClass="ui-card-shadow interactive">
           <p-header>
-              <img *ngFor="let image of resource.image" class="card-img-top" alt="{{image.alt}}" title="{{image.title}}" role="presentation" src="{{image.url}}">
+              <img *ngFor="let image of resource.image" class="card-img-top" alt="{{image.alt}}" title="{{image.title}}" src="{{image.url}}">
           </p-header>
             <h3 class="card-header h5 my-0 font-weight-light text-uppercase">
                 {{resource.highlightTitle}}

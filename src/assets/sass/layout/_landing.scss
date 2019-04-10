@@ -16,7 +16,7 @@
         width: auto;
     }
     section h2:first-child {
-        margin-top: $xlargeMargin
+        margin-top: $xxlargeMargin
     }
 
     .bg-primary {
@@ -115,14 +115,28 @@
             -moz-box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.1);
             box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.1);
             /*new*/
-            display: flex;
+            display: flex;  
 
-
+            .sm-res {
+                display: none;
+                @media (max-width: 768px) {
+                    display: block;
+                }
+            }
+            .lg-res {
+                display: block;
+                @media (max-width: 768px) {
+                    display: none;
+                }
+            }
             .logo {
                 float: left;
                 margin-right: 1rem;
                 vertical-align: middle;
                 max-width: 200px;
+                @media (max-width:768px) {
+                    max-width: 57px;
+                }
             }
             
              #menu {
@@ -168,14 +182,14 @@
             }
             
              #menu-button {
-                color: $accentColor;
+                color: $primaryColor;
                 display: none;
                 flex-grow: 1;
-                height: 36px;
                 text-align: right;
                 
                 i {
-                    font-size: $fontSizeLarge;
+                    color: $primaryColor;
+                    font-size: $fontSizeExtraLarge;
                 }
             }
         }
@@ -216,6 +230,8 @@
         &.horizontal {
             img {
                 max-height: 400px;
+                position: sticky;
+                top: 100px;
             }
         }
 
@@ -482,6 +498,7 @@
                 align-items: center;
                 background: $primaryWhite;
                 display: flex;
+                justify-content: space-between;
                 padding: .5rem 1rem;
                 position: fixed;
                 left: 0;
@@ -492,6 +509,16 @@
                 -moz-box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.1);
                 box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.1);
                 
+                & > div:last-child {
+                    align-items: center;
+                    display: flex;
+                    justify-content: flex-end;
+                }
+
+                .ui-button {
+                    margin-bottom: 0px;
+                }
+
                 #menu-button {
                     display: inline-block;
                 }
@@ -499,7 +526,7 @@
                 #menu {
                     z-index: 100;
                     position: fixed;
-                    top: 95px;
+                    top: 89px;
                     right: 18px;
                     float: none;
                     display: none;
@@ -523,6 +550,9 @@
                         a {
                             font-size: 16px;
                             display: block;
+                            @media (max-height:405px) {
+                              padding: 10px 16px;  
+                            };
                             padding: 10px 16px;
                             width: 100%;
                             box-sizing: border-box;
