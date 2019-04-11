@@ -9,6 +9,9 @@
           <div *ngFor="let contact of contact.feature" class="">
               <h3 *ngIf="contact.highlightTitle">{{contact.highlightTitle}}</h3>
               <p *ngIf="contact.highlightSubtitle" class="display-3 font-weight-bold"><a [href]="contact.highlightLink" style="color:#ffffff">{{contact.highlightSubtitle}}</a></p>
+              <div *ngIf="contact.highlightText">
+                <p *ngFor="let p of contact.highlightText">{{p.paragraph}}</p>
+              </div>
               <a *ngIf="contact.highlightLinkText" href="{{contact.highlightLink}}}" class="ui-button secondary" role="button" >{{contact.highlightLinkText}}</a>
           </div>
         </div>
