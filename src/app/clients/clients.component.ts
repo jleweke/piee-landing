@@ -38,7 +38,7 @@ export class ClientsComponent implements OnInit {
      }],
     "buttonLink":"",
     "buttonAccessibilityLabel":"",
-    "buttonText":"Read success stories"
+    "buttonText":""
  }]
 
   public banner: any;

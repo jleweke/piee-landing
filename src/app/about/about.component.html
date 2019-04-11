@@ -1,7 +1,7 @@
 <section *ngFor="let about of aboutContent" class="pt-5" [ngClass]="!about.callToActionText ? 'pb-5' :''" id="{{about.contentBlockId}}">
     <div class="p-grid container">
       <div *ngIf="about.title" class="p-col-12 center">
-        <h2 class="display-3 h2 font-weight-bold" [ngClass]="!about.subTitle ? 'mb-5 pb-3' : ''">{{about.title}}<span class="text-yellow">.</span></h2>
+        <h2 class="display-2 h2 font-weight-bold" [ngClass]="!about.subTitle ? 'mb-5 pb-3' : ''">{{about.title}}<span class="text-yellow">.</span></h2>
         <p *ngIf="about.subTitle" class="lead">{{about.subTitle}}</p>
       </div>
       <div *ngFor="let item of about.feature" [ngClass]="about.feature.length > 3 ? 'p-md-3 center' : 'p-md-4 center'">

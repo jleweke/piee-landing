@@ -3,7 +3,7 @@
   <div class="p-grid pb-5">
     <div class="p-grid container short-panel">
     <div class="p-col-12 center">
-        <h2 class="display-3 h2 font-weight-bold" [ngClass]="!help.subtitle ? 'mb-5 pb-3' : ''">{{help.title}}<span class="text-yellow">.</span></h2>
+        <h2 class="display-2 h2 font-weight-bold" [ngClass]="!help.subtitle ? 'mb-5 pb-3' : ''">{{help.title}}<span class="text-yellow">.</span></h2>
         <p *ngIf="help.subTitle" class="lead pr-5">{{help.subTitle}}</p>
     </div>
       <div *ngFor="let resource of help.feature" [ngClass]="help.feature.length > 3 ? 'p-col-12 p-md-6 p-lg-3' : ' p-col-12 p-lg-4'">

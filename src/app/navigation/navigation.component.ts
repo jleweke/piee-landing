@@ -22,12 +22,12 @@ export class NavigationComponent implements OnInit {
       "linkUrl":"about"
     },
     {
-      "linkText":"Benefits",
-      "linkUrl":"benefits",
-    },
-    {
       "linkText":"Features",
       "linkUrl":"features",
+    },
+    {
+      "linkText":"Capabilities",
+      "linkUrl":"capabilities",
     },
     {
       "linkText":"Resources",

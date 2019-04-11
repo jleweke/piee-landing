@@ -10,8 +10,8 @@ import { Entry } from 'contentful';
 export class BenefitsComponent implements OnInit {
 
   benefitsContent =[{
-    "contentBlockId":"features",
-    "title": "Platform features",
+    "contentBlockId":"capabilities",
+    "title": "PIEE Capabilities ",
     "subTitle": "",
     "feature": [{
         "image": [{
@@ -33,7 +33,7 @@ export class BenefitsComponent implements OnInit {
          }],
         "highlightTitle":"Invoicing and Payments",
         "highlightText":"Submit, request, receive, and approve invoices, payments and all required contract documentation, check the status of existing invoices and pending payments, and access tax statements.",
-        "highlightLinkText":"Check Invoice or Payment Status",
+        "highlightLinkText":"See how to check Invoice Status",
         "highlightLink":"https://wawftraining.eb.mil/wbt/xhtml/wbt/minv/index.xhtml",
         "highlightLinkAccessibilityLabel":"View instructions for checking and invoice or payment status"
       },

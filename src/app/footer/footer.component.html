@@ -26,7 +26,7 @@
   <div class="bg-gray">
     <div class="p-grid container p-justify-center">
       <div class="footer-links text-center py-2 font-weight-light text-white">
-          <div class="p-col"><small><a *ngFor="let link of footer.bottomLinks" class="text-white pr-4">{{link.linkText}}</a>This is an official website of the U.S. government.</small></div>
+          <div class="p-col"><small><a *ngFor="let link of footer.bottomLinks" class="text-white pr-4" [href]="link.url">{{link.linkText}}</a><img src="assets/images/united-states-flag.png" alt="United states flag icon" title="United states flag icon"> An official website of the United States government. | &copy; Copyright 2019</small></div>
         </div>
       </div>
   </div>

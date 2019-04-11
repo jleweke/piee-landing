@@ -15,64 +15,60 @@ export class FooterComponent implements OnInit {
       "link": [
         {
         "linkText":"PIEE Overview",
-        "url":""
+        "url":"https://wawftraining.eb.mil/wbt/xhtml/wbt/piee/index.xhtml"
         },
         {
         "linkText":"PIEE Latest Enhancements",
-        "url":""
+        "url":"https://wawftraining.eb.mil/wbt/portal/documents/PIEEEnhancementsByRelease.docx - docx"
         },
         {
         "linkText":"Procure to Pay Summary",
-        "url":""
+        "url":"https://www.acq.osd.mil/dpap/pdi/p2p/index.html"
         },
         {
         "linkText":"WAWF Overview",
-        "url":""
+        "url":"http://www.caci.com/business/comprizon/wawf.shtml"
         },
         {
         "linkText":"WAWF Special Feature",
-        "url":""
+        "url":"http://www.caci.com/special/WAWF.shtml"
         },         
       ]
       },
       {
       "sectionTitle":"Support",
       "link": [
-        {
-        "linkText":"Help Desk",
-        "url":""
-        },
-        {
+            {
         "linkText":"Documentation",
-        "url":""
+        "url":"https://wawf.eb.mil/xhtml/unauth/help/help.xhtml"
         },
         {
         "linkText":"Glossary",
-        "url":""
+        "url":"https://wawftraining.eb.mil/wbt/xhtml/wbt/portal/overview/Glossary.xhtml"
         },
         {
         "linkText":"Lookup Tables",
-        "url":""
+        "url":"https://wawf.eb.mil/xhtml/unauth/help/helpWhosMyGAM.xhtml"
         }, 
         {
         "linkText":"Solicitation Search",
-        "url":""
+        "url":"https://wawf.eb.mil/sol/xhtml/unauth/index.xhtml"
         },   
         {
         "linkText":"Purpose Code Management",
-        "url":""
+        "url":"https://wawf.eb.mil/pcm/xhtml/unauth/index.xhtml"
         },   
         {
         "linkText":"WAWF Users Manual",
-        "url":""
+        "url":"https://wawftraining.eb.mil/wbt/xhtml/wbt/wawf/index.xhtml"
         },  
         {
         "linkText":"Government Support",
-        "url":""
+        "url":"https://wawf.eb.mil/xhtml/unauth/web/homepage/governmentCustomerSupport.xhtml"
         },    
         {
           "linkText":"Vendor Support",
-          "url":""
+          "url":"https://wawf.eb.mil/xhtml/unauth/web/homepage/vendorCustomerSupport.xhtml"
         }
       ]
       },
@@ -81,31 +77,31 @@ export class FooterComponent implements OnInit {
       "link": [
         {
         "linkText":"Log In",
-        "url":""
+        "url":"https://wawf.eb.mil/"
         },
         {
         "linkText":"Register",
-        "url":""
+        "url":"https://wawf.eb.mil/xhtml/unauth/registration/notice.xhtml"
         },
         {
         "linkText":"Machine Setup Instructions",
-        "url":""
+        "url":"https://wawf.eb.mil/xhtml/unauth/web/homepage/machineSetup.xhtml"
         },
         {
         "linkText":"Get Started – Vendors",
-        "url":""
+        "url":"https://wawf.eb.mil/xhtml/unauth/help/helpvendors.xhtml"
         },     
         {
         "linkText":"Get Started – Government",
-        "url":""
+        "url":"https://wawf.eb.mil/xhtml/unauth/help/helpgovernment.xhtml"
         },
         {
         "linkText":"Get Started – Contractors",
-        "url":""
+        "url":"https://wawf.eb.mil/xhtml/unauth/help/helpcontractors.xhtml"
         },
         {
         "linkText":"Get Started – New Federal Customers",
-        "url":""
+        "url":"https://wawf.eb.mil/xhtml/unauth/web/homepage/helpFederalCustomers.xhtml"
         } 
       ]
       },
@@ -113,16 +109,12 @@ export class FooterComponent implements OnInit {
       "sectionTitle":"Contact Us",
       "link": [
         {
-        "linkText":"Email the Help Desk",
-        "url":""
-        },
-        {
         "linkText":"Open a Ticket – Vendors",
-        "url":""
+        "url":"https://wawf.eb.mil/xhtml/unauth/web/homepage/vendorCustomerSupport.xhtml"
         },
         {
         "linkText":"Open a Ticket - Government",
-        "url":""
+        "url":"https://wawf.eb.mil/xhtml/unauth/web/homepage/governmentCustomerSupport.xhtml"
         },
         {
         "linkText":"866.618.5988",
@@ -132,23 +124,23 @@ export class FooterComponent implements OnInit {
       }],   
     "images": [{
       "imageUrl":"assets/images/footer/app-store-badge.png",
-      "url":"",
+      "url":"https://itunes.apple.com/us/app/wawf-mobile/id561965575?ls=1&mt=8",
       "title":"App Store",
       "alt":"App Store badge"
     },
     {
       "imageUrl":"assets/images/footer/google-play.png",
-      "url":"",
+      "url":"https://play.google.com/store/apps/details?id=com.wawf.droid&hl=en",
       "title":"Google Play Store",
       "alt":"Google Play badge"
     }],
     "bottomLinks": [{
       "linkText":"Accessibility / 508 ",
-      "url":""
+      "url":"https://wawf.eb.mil/xhtml/unauth/web/homepage/Accessibility.xhtml"
       }, 
       {
       "linkText":"Privacy & Security",
-      "url":""
+      "url":"https://wawf.eb.mil/xhtml/unauth/web/homepage/SecurityAndPrivacy.xhtml"
     }]
 }]
 

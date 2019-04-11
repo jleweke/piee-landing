@@ -1,7 +1,7 @@
 <section *ngFor="let faqs of faqsContent"  id="{{faqs.contentBlockId}}" role="complementary" class="bg-dark">
   <div class="p-grid p-align-center container pb-5">
     <div class="p-col-12 p-lg-6">
-        <h2 class="display-3 h2 font-weight-bold" [ngClass]="!faqs.subTitle ? 'mb-5 pb-3' : ''">{{faqs.title}}<span class="text-yellow">.</span></h2>
+        <h2 class="display-2 h2 font-weight-bold" [ngClass]="!faqs.subTitle ? 'mb-5 pb-3' : ''">{{faqs.title}}<span class="text-yellow">.</span></h2>
         <p *ngIf="faqs.subTitle" class="lead pr-5">{{faqs.subTitle}}</p>
         <a *ngIf="faqs.callToActionText" [href]="faqs.callToActionLink" class="ui-button secondary ui-secondary-button-transparent" role="button" >{{faqs.callToActionText}}</a>
     </div>

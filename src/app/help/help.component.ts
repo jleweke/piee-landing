@@ -47,7 +47,7 @@ helpContent = [{
   }],
   "highlightTitle":"Setup",
   "highlightSubtitle":"Setup Instructions",
-  "highlightText":"Follow step-by-step instructions to get your machine configured properly for use with PIEE. ",
+  "highlightText":"Follow instructions to get up and running with PIEE. ",
   "highlightLinkText":"View Setup Instructions",
   "highlightLink":"https://wawf.eb.mil/xhtml/unauth/web/homepage/machineSetup.xhtml",
   "highlightLinkAccessibilityLabel":"Go to PIEE setup instructions"

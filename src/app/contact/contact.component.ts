@@ -12,7 +12,7 @@ export class ContactComponent implements OnInit  {
 contactContent = [{
  "contentBlockId":"contact",
  "title": "Get in touch",
- "subTitle": "Not sure how to use a feature or need some help? Send us a secure message or give us a call.",
+ "subTitle": "Not sure how to use a feature or need some help? Send  a secure message to the Ogden Help Desk or give us a call.",
  "callToActionText":"Send a secure message",
  "callToActionLink":"https://wawf.eb.mil/xhtml/unauth/web/homepage/governmentCustomerSupport.xhtml",
  "feature": [{

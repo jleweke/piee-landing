@@ -9,7 +9,7 @@
           <img class="client-logo" [src]="image.url" [alt]="image.alt" [title]="image.title">      
       </div>
     </div>
-    <div class="center">
+    <div *ngIf="banner.buttonText" class="center">
           <a href="{{banner.buttonLink}}" attr.aria-label={{banner.buttonAccessibilityLabel}} class="ui-button secondary overlap" role="button">{{banner.buttonText}}</a>
     </div>
 </section> 

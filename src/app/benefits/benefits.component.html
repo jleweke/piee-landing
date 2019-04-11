@@ -1,7 +1,7 @@
 <section *ngFor="let benefits of benefitsContent" class="bg-light py-5" id="{{benefits.contentBlockId}}"> 
   <div class="p-grid p-justify-center container pb-5">
     <div class="p-col-12 center">
-      <h2 class="display-3 h2 font-weight-bold" [ngClass]="!benefits.subTitle ? 'mb-5 pb-3' : ''">{{benefits.title}}<span class="text-yellow">.</span></h2>
+      <h2 class="display-2 h2 font-weight-bold" [ngClass]="!benefits.subTitle ? 'mb-5 pb-3' : ''">{{benefits.title}}<span class="text-yellow">.</span></h2>
       <p *ngIf="benefits.subTitle" class="lead">{{benefits.subTitle}}</p>
     </div>
       <div *ngFor="let ben of benefits.feature" class="p-col-12 p-md-4 center tall-panel">

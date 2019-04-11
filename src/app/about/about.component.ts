@@ -11,7 +11,7 @@ export class AboutComponent implements OnInit {
 
   aboutContent = [{
     "contentBlockId":"about",
-    "title": "About the platform",
+    "title": "About PIEE",
     "subTitle": "The Procurement Integrated Enterprise Environment (PIEE) is the primary enterprise procure-to-pay (P2P) application for the Department of Defense and it’s supporting agencies and is trusted by companies reporting on over $7.1 billion in spending.",
     "feature": [{
         "highlightIcon":"ui-icon-trending-up",
