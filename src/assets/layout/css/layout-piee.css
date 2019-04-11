@@ -402,6 +402,13 @@ ul.no-bullet i {
   max-width: 100%;
   width: auto;
 }
+.landing-wrapper .horizontal img {
+  max-height: 400px;
+  position: sticky;
+  position: -webkit-sticky;
+  text-align: center;
+  top: 100px;
+}
 .landing-wrapper section h2:first-child {
   margin-top: 3rem;
 }
@@ -496,6 +503,9 @@ ul.no-bullet i {
   box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.1);
   /*new*/
   display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .landing-wrapper #header .header-top .sm-res {
   display: none;
@@ -528,6 +538,9 @@ ul.no-bullet i {
   list-style: none;
   text-align: center;
   align-items: center;
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-content: flex-start;
   flex-grow: 1;
@@ -603,6 +616,7 @@ ul.no-bullet i {
 .landing-wrapper .ui-card.horizontal img {
   max-height: 400px;
   position: sticky;
+  position: -webkit-sticky;
   text-align: center;
   top: 100px;
 }
@@ -649,6 +663,9 @@ ul.no-bullet i {
     align-items: center;
     background: #ffffff;
     display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     justify-content: space-between;
     padding: 0.5rem 1rem;
     position: fixed;
@@ -662,6 +679,9 @@ ul.no-bullet i {
   }
   .landing-wrapper #header .header-top > div:last-child {
     align-items: center;
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     justify-content: flex-end;
   }
@@ -1949,6 +1969,12 @@ body a {
   margin: 0 auto;
   padding-right: 15px;
   padding-left: 15px;
+}
+
+.p-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .p-col,

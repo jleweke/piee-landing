@@ -22,6 +22,15 @@
         max-width: 100%;
         width: auto;
     }
+    .horizontal {
+        img {
+            max-height: 400px;
+            position: sticky;
+            position: -webkit-sticky;
+            text-align: center;
+            top: 100px;
+        }
+    }
     section h2:first-child {
         margin-top: $xxlargeMargin
     }
@@ -123,6 +132,7 @@
             box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.1);
             /*new*/
             display: flex;  
+            @include flex();
 
             .sm-res {
                 display: none;
@@ -151,6 +161,7 @@
                 text-align: center;
                 align-items: center;
                 display: flex;
+                @include flex();
                 justify-content: flex-start;
                 flex-grow: 1;
                 
@@ -238,216 +249,13 @@
             img {
                 max-height: 400px;
                 position: sticky;
+                position: -webkit-sticky;
                 text-align: center;
                 top: 100px;
             }
         }
 
     }
-    // #features {
-    //     width: 960px;
-    //     margin: 0 auto;
-    //     padding: 50px 0px;
-    //     text-align: center;
-        
-    //     h2 {
-    //         font-weight: 400;
-    //         line-height: 28px;
-    //     }
-        
-    //     h3 {
-    //         font-weight: 400;
-    //     }
-        
-    //     p {
-    //         color: $textSecondaryColor;
-    //     }
-        
-    //     .ui-g-12 {
-    //         padding: 2em .5em;
-    //     }
-        
-    //     .feature-icon {
-    //         display: inline-block;
-    //         @include border-radius(50%);
-    //         background-color: #f4f8fc;
-    //         box-sizing: border-box;
-    //         width: 100px;
-    //         height: 100px;
-    //         text-align: center;
-    //         @include transition(background-color .3s);
-            
-    //         i {
-    //             margin-top: 30px;
-    //             font-size: 36px;
-    //         }
-            
-    //         &:hover {
-    //             background-color: #e91e63;
-                
-    //             i {
-    //                 color: $primaryWhite;
-    //             }
-    //         }
-    //     }
-    // }
-    
-    // #promotion {
-    //     background: url("../images/landing/promotion.png") top left no-repeat;
-    //     background-size: 100% auto;
-        
-    //     .ui-lg-8 {
-    //         padding: 150px 0 0 150px;
-    //         h1 {
-    //             font-weight: 48px;
-    //             color: $primaryWhite;
-    //             font-weight: 400;
-    //         }
-    //     }
-
-    //     .ui-lg-4 {
-    //         margin: -50px 0 -50px 0;
-    //         .card {
-    //             -webkit-box-shadow: 0 0 27px 4.5px rgba(13, 36, 62, 0.1);
-    //             -moz-box-shadow: 0 0 27px 4.5px rgba(13, 36, 62, 0.1);
-    //         	box-shadow: 0 0 27px 4.5px rgba(13, 36, 62, 0.1);
-    //             margin-bottom: 20px;
-                
-    //             h3 {
-    //                 font-weight: 400;
-    //             }
-                
-    //             p {
-    //                 color: $textSecondaryColor;
-    //             }
-                
-    //             &:last-child {
-    //                 margin-bottom: 0;
-    //             }
-    //         }
-    //     }
-    // }
-    
-    // #pricing {
-    //     width: 960px;
-    //     margin: 0 auto;
-    //     padding: 50px 0px;
-    //     text-align: center;
-                
-    //     h2 {
-    //         font-weight: 400;
-    //     }
-        
-    //     p {
-    //         color: $textSecondaryColor;
-    //     }
-        
-    //     .pricing-box {
-    //         .card {
-    //             height: 100%; 
-    //             padding: 0;  
-    //         }
-            
-    //         .pricing-header {
-    //             padding: 40px 0;
-    //             color: $primaryWhite;
-                
-    //             span {
-    //                 display: block;
-    //                 line-height: 48px;
-                    
-    //                 &.name {
-    //                     font-weight: 300;
-    //                     font-size: 24px;
-    //                 }
-                    
-    //                 &.fee {
-    //                     font-size: 48px;
-    //                     font-weight: 700;
-    //                 }
-                    
-    //                 &.type {
-    //                     font-weight: 300;
-    //                     font-size: 16px;
-    //                 }
-    //             }
-    //         }
-            
-    //         .pricing-content {
-    //             ul {
-    //                 margin: 0;
-    //                 padding: 30px 20px;
-    //                 list-style-type: none;
-                    
-    //                 li {
-    //                     font-size: 18px;
-    //                     text-align: left;
-    //                     padding: 10px 14px;
-                        
-    //                     i {
-    //                         margin-right: 20px;
-    //                         vertical-align: middle;
-    //                     }
-                        
-    //                     span {
-    //                         vertical-align: middle;
-    //                     }
-    //                 }
-    //             }
-    //         }
-            
-    //         &.pricing-basic {
-    //             .pricing-header {
-    //                 background-color: #3f51b5;
-    //             }
-                
-    //             i {
-    //                 color: #3f51b5;
-    //             }
-    //         }
-            
-    //         &.pricing-standard {
-    //             .pricing-header {
-    //                 background-color: #e91e63;
-    //             }
-                
-    //             i {
-    //                 color: #e91e63;
-    //             }
-    //         }
-            
-    //         &.pricing-professional {
-    //             .pricing-header {
-    //                 background-color: #607d8b;
-    //             }
-                
-    //             i {
-    //                 color: #607d8b;
-    //             }
-    //         }
-    //     }
-    // }
-    
-    // #video {
-    //     background-color: #f7f7f7;
-    //     min-width: 400px;
-        
-    //     .video-content {
-    //         width: 960px;
-    //         margin: 0 auto;
-    //         padding: 50px 0px;
-    //         text-align: center;
-            
-                    
-    //         h2 {
-    //             font-weight: 400;
-    //         }
-            
-    //         p {
-    //             color: $textSecondaryColor;
-    //         }
-    //     }
-    // }
     
     footer {
         a {
@@ -506,6 +314,7 @@
                 align-items: center;
                 background: $primaryWhite;
                 display: flex;
+                @include flex();
                 justify-content: space-between;
                 padding: .5rem 1rem;
                 position: fixed;
@@ -520,6 +329,7 @@
                 & > div:last-child {
                     align-items: center;
                     display: flex;
+                    @include flex();
                     justify-content: flex-end;
                 }
 

@@ -4,6 +4,9 @@
     padding-right: 15px;
     padding-left: 15px;
 }
+.p-grid {
+    @include flex();
+}
 .p-col,
 [class^="p-col-"],
 [class^="p-sm-"],
