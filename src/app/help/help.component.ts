@@ -43,7 +43,7 @@ helpContent = [{
   "image":[{
     "alt":"Settings image",
     "title":"Settings",
-    "url":"assets/images/resources/settings-white-min.png"    
+    "url":"assets/images/resources/settings-min.png"    
   }],
   "highlightTitle":"Setup",
   "highlightSubtitle":"Setup Instructions",
@@ -73,16 +73,12 @@ helpContent = [{
     "downloadUrl":"https://wawf.eb.mil/xhtml/unauth/help/helpWhosMyGAM.xhtml"
     },
     {
-    "downloadText":"Find Units of Measure",
-    "downloadUrl":"https://wawf.eb.mil/xhtml/unauth/help/helpWhosMyGAM.xhtml"
-    },
-    {
     "downloadText":"Find Vendor Point of Contact",
     "downloadUrl":"https://wawf.eb.mil/xhtml/unauth/help/helpWhosMyGAM.xhtml"
     },
     {
     "downloadText":"Search Solicitations",
-    "downloadUrl":""
+    "downloadUrl":"https://wawf.eb.mil/sol/xhtml/unauth/index.xhtml"
     }],
   "highlightText":"",
   "highlightLinkText":"",

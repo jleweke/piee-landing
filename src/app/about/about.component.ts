@@ -16,7 +16,7 @@ export class AboutComponent implements OnInit {
     "feature": [{
         "highlightIcon":"ui-icon-trending-up",
         "highlightTitle":"Increase productivity",
-        "highlightText":"PIEE enables automation through every phase of the procurement process reducing manual data entry and administration tasks from pre-award through contract close.",
+        "highlightText":"PIEE enables automation through every phase of the procurement process reducing manual data entry and administrative tasks from pre-award through contract close.",
         "highlightLinkText":"",
         "highlightLink":"",
         "highlightLinkAccessibilityLabel":""

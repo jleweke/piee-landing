@@ -18,8 +18,8 @@ export class FooterComponent implements OnInit {
         "url":"https://wawftraining.eb.mil/wbt/xhtml/wbt/piee/index.xhtml"
         },
         {
-        "linkText":"PIEE Latest Enhancements",
-        "url":"https://wawftraining.eb.mil/wbt/portal/documents/PIEEEnhancementsByRelease.docx - docx"
+        "linkText":"PIEE Latest Enhancements - docx",
+        "url":"https://wawftraining.eb.mil/wbt/portal/documents/PIEEEnhancementsByRelease.docx"
         },
         {
         "linkText":"Procure to Pay Summary",
@@ -123,16 +123,16 @@ export class FooterComponent implements OnInit {
       ]
       }],   
     "images": [{
-      "imageUrl":"assets/images/footer/app-store-badge.png",
-      "url":"https://itunes.apple.com/us/app/wawf-mobile/id561965575?ls=1&mt=8",
-      "title":"App Store",
-      "alt":"App Store badge"
+      "imageUrl":"",
+      "url":"",
+      "title":"",
+      "alt":""
     },
     {
-      "imageUrl":"assets/images/footer/google-play.png",
-      "url":"https://play.google.com/store/apps/details?id=com.wawf.droid&hl=en",
-      "title":"Google Play Store",
-      "alt":"Google Play badge"
+      "imageUrl":"",
+      "url":"",
+      "title":"",
+      "alt":""
     }],
     "bottomLinks": [{
       "linkText":"Accessibility / 508 ",

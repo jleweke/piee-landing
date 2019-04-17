@@ -19,7 +19,7 @@ faqsContent =[{
 "callToActionLink":"https://wawf.eb.mil/xhtml/unauth/web/homepage/governmentCustomerSupport.xhtml",
 "feature" :[{
   "question":"How do I get started using PIEE?",
-  "answer":"To get started with PIEE, please follow the steps in our Machine Setup guide",
+  "answer":"To get started with PIEE, please follow the steps in our Machine Setup guide.",
   "linkText":"Go to Machine Setup",
   "url":"https://wawf.eb.mil/xhtml/unauth/web/homepage/machineSetup.xhtml"
   },
