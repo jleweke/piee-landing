@@ -100,7 +100,7 @@ export class FooterComponent implements OnInit {
         "url":"https://wawf.eb.mil/xhtml/unauth/help/helpcontractors.xhtml"
         },
         {
-        "linkText":"Get Started – New Federal Customers",
+        "linkText":"Get Started – Prospective Federal Interface Partners",
         "url":"https://wawf.eb.mil/xhtml/unauth/web/homepage/helpFederalCustomers.xhtml"
         } 
       ]

@@ -15,9 +15,9 @@ helpContent = [{
 "subTitle":"",
 "feature": [{
   "image":[{
-    "alt":"Image alt tag",
-    "title":"image title",
-    "url":"assets/images/benefits/AdobeStock_172303985_Preview_small.jpg"    
+    "alt":"Learning image",
+    "title":"Learning",
+    "url":"assets/images/resources/learn-min.png"    
   }],
   "highlightTitle":"Documentation",
   "highlightSubtitle":"Videos and Guides",
@@ -28,9 +28,9 @@ helpContent = [{
 },
 {
   "image":[{
-    "alt":"Image alt tag",
-    "title":"image title",
-    "url":"assets/images/benefits/AdobeStock_172303985_Preview_small.jpg"    
+    "alt":"User registration image",
+    "title":"User registration",
+    "url":"assets/images/resources/user-min.png"    
   }],
   "highlightTitle":"Registration ",
   "highlightSubtitle":"Steps to Get Started",
@@ -41,9 +41,9 @@ helpContent = [{
 },
 {
   "image":[{
-    "alt":"Image alt tag",
-    "title":"image title",
-    "url":"assets/images/benefits/AdobeStock_172303985_Preview_small.jpg"    
+    "alt":"Settings image",
+    "title":"Settings",
+    "url":"assets/images/resources/settings-white-min.png"    
   }],
   "highlightTitle":"Setup",
   "highlightSubtitle":"Setup Instructions",
@@ -54,9 +54,9 @@ helpContent = [{
 },
 {
   "image":[{
-    "alt":"Image alt tag",
-    "title":"image title",
-    "url":"assets/images/benefits/AdobeStock_172303985_Preview_small.jpg"    
+    "alt":"Search image",
+    "title":"Search",
+    "url":"assets/images/resources/search-min.png"    
   }],
   "highlightTitle":"Information Lookup",
   "highlightSubtitle":"Search Tools",

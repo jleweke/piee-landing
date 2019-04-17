@@ -18,9 +18,9 @@ featuresContent = [{
         "highlightTitle":"Tools for each step of the procurement process",
       /* feature */
         "image": [{
-          "alt":"Image alt tag",
-          "title":"image title",
-          "url":"assets/images/features/data-analytics.jpg"
+          "alt":"Data and automation image",
+          "title":"Data and automation",
+          "url":"assets/images/features/data-tools-min.png"
          }],
         "imageRight":"",
         "highlightContent": [
@@ -67,9 +67,9 @@ featuresContent = [{
       /* feature */
         "highlightTitle":"Financial and property management",
         "image": [{
-          "alt":"Image alt tag",
-          "title":"image title",
-          "url":"assets/images/features/data-analytics.jpg"
+          "alt":"Financial tools image",
+          "title":"Financial tools",
+          "url":"assets/images/features/financial-tools-min.png"
          }],
         "imageRight":"t",
         "highlightContent": [
@@ -106,9 +106,9 @@ featuresContent = [{
       /* feature */
         "highlightTitle":"Secure business process administration",      
         "image": [{
-          "alt":"Image alt tag",
-          "title":"image title",
-          "url":"assets/images/features/data-analytics.jpg"
+          "alt":"Business administration tools image",
+          "title":"Business administration tools",
+          "url":"assets/images/features/business-strategy-min.png"
          }],
         "imageRight":"",
         "highlightContent": [

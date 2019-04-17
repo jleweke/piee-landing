@@ -10,6 +10,127 @@
            <p-accordion>
                 <p-accordionTab header="{{faq.question}}">
                     {{faq.answer}}
+                    <p><a [href]="faq.url">{{faq.linkText}}</a></p>
+                    <!-- <table>
+                      <thead style="text-align: left">
+                        <th>Agency</th>
+                        <th>System</th>
+                        <th>Contact</th>
+                      </thead>
+                      <tbody>
+                        <tr style="word-break: break-word">
+                          <td class="p-col-4">Air Force Finance Help Desk
+                          </td>
+                          <td class="p-col-2">PIEE
+                          </td>
+                          <td class="p-col-6">Email: saf.fmpaffso.customerservice@us.af.mil<br/>Phone: 937-257-3117 
+                            <br/>DSN: 312-787-3117</td>
+                        </tr>
+                      </tbody>
+                    </table> -->
+                    <div *ngIf="faq.tableContent" class="p-grid container">
+                    <div class="p-col-12 p-lg-6" style="word-wrap: break-word">
+                      <p><strong>Air Force Finance Help Desk</strong> 
+                        <br/><i>PIEE</i><br/>
+                       Email: saf.fmpaffso.customerservice@us.af.mil<br/>
+                       Phone: 937-257-3117 <br/>
+                        DSN:312-787-3117
+                      </p>
+                    </div>
+                    <div class="p-col-12 p-lg-6" style="word-wrap: break-word">
+                      <p><strong>Army Help Desk</strong> 
+                        <br/><i>PIEE</i><br/>
+                        Email: dfas.dscc.jac.mbx.army-wawf-Help Desk@mail.mil
+                      </p>
+                    </div>
+                    <div class="p-col-12 p-lg-6" style="word-wrap: break-word">
+                      <p><strong>CORT Tool Help Desk</strong> 
+                        <br/><i>PIEE</i><br/>
+                        Email: disa.global.servicedesk.mbx.eb-ticket-requests@mail.mil  
+                        <br/>
+                       Phone: 866-618-5988
+                      </p>
+                    </div>
+                    <div class="p-col-12 p-lg-6" style="word-wrap: break-word">
+                      <p><strong>DCMA Help Desk</strong> 
+                        <br/><i>PIEE</i><br/>
+                        Email: servicecenter@dcma.mil 
+                        <br/>
+                        Phone: 888-576-3262
+                      </p>
+                    </div>      
+                    <div class="p-col-12 p-lg-6" style="word-wrap: break-word">
+                        <p><strong>DFAS Help Desk</strong> 
+                        <br/><i>PIEE</i><br/>
+                        Email: https://www.dfas.mil/dfas/AskDFAS/DoDAAC.html  
+                      </p>
+                    </div>    
+                    <div class="p-col-12 p-lg-6" style="word-wrap: break-word">
+                        <p><strong>DLA Help Desk</strong> 
+                        <br/><i>PIEE</i><br/>
+                        Email: wawf@dla.mil<br/>
+                        Phone: 571-767-1925
+                      </p>
+                    </div>   
+                    <div class="p-col-12 p-lg-6" style="word-wrap: break-word">
+                        <p><strong>EDA Help Desk</strong> 
+                        <br/><i>EDA</i><br/>
+                        Email: disa.global.servicedesk.mbx.eb-ticket-requests@mail.mil  
+                        <br/>
+                        Phone: 866-618-5988
+                     </p>
+                    </div>       
+                    <div class="p-col-12 p-lg-6" style="word-wrap: break-word">
+                        <p><strong>IUID Help Desk</strong> 
+                        <br/><i>IUID</i><br/>
+                        Email: Iuid.Help Desk@dla.mil
+                        <br/>
+                        Phone: 269-961-4745
+                     </p>
+                    </div>   
+                    <div class="p-col-12 p-lg-6" style="word-wrap: break-word">
+                        <p><strong>myInvoice Help Desk</strong> 
+                        <br/><i>MINV</i><br/>
+                        Email: dfas.dscc.jjh.mbx.cco-esolutions-myinvoice@mail.mil
+                     </p>
+                    </div>   
+                    <div class="p-col-12 p-lg-6" style="word-wrap: break-word">
+                        <p><strong>NASA GAM Help Desk</strong> 
+                        <br/><i>PIEE</i><br/>
+                        Email: HQ-WAWF@mail.nasa.gov 
+                     </p>
+                    </div>   
+                    <div class="p-col-12 p-lg-6" style="word-wrap: break-word">
+                        <p><strong>Navy Help Desk</strong> 
+                        <br/><i>PIEE</i><br/>
+                        Email: dfas.cleveland-oh.ztc.mbx.ccl-ec-navy-wawf-Help Desk@mail.mil  
+                        <br/>
+                        Phone: 800-756-4571 opt 6    
+                    </p>
+                    </div>   
+                    <div class="p-col-12 p-lg-6" style="word-wrap: break-word">
+                        <p><strong>USMC Help Desk</strong> 
+                        <br/><i>PIEE</i><br/>
+                        Email: USMCWAWFHelp Desk@saic.com
+                        <br/>
+                        Phone: 800-520-1363 opt 3  
+                     </p>
+                    </div>   
+                    <div class="p-col-12">
+                        <p><strong>Technical Support</strong><br/>
+                            If you are experiencing technical problems with Procurement Integrated Enterprise Environment, please contact the DISA DECC Ogden Electronic Business Service Desk or visit the <a href="https://wawf.eb.mil/xhtml/unauth/web/homepage/governmentCustomerSupport.xhtml">PIEE customer support page</a> and click "Ogden Help Desk" to submit a ticket. 
+                     </p>
+                    </div>  
+                    <div class="p-col-12" style="word-wrap: break-word">
+                        <p><strong>Ogden Help Desk</strong> 
+                        <br/><i>PIEE</i><br/>
+                        Email: disa.global.servicedesk.mbx.eb-ticket-requests@mail.mil
+                        <br/>
+                        Phone: 866-618-5988, 801-605-7095<br/>
+                        Fax: 801-605-7453 
+                     </p>
+                    </div>                                   
+                  </div>
                 </p-accordionTab>
            </p-accordion>
         </div>
