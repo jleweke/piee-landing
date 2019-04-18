@@ -101,14 +101,17 @@
         & + div {
             position: relative;
         }
+    }
     .parallax { 
         /* Create the parallax scrolling effect */
         background-attachment: fixed;
+        @media (max-width: 812px) {
+            background-attachment: initial;
+        }
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
-    }
     }
     #header {
         width: 100%;

@@ -474,13 +474,18 @@ ul.no-bullet i {
 .landing-wrapper .overlay + div {
   position: relative;
 }
-.landing-wrapper .overlay .parallax {
+.landing-wrapper .parallax {
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+}
+@media (max-width: 812px) {
+  .landing-wrapper .parallax {
+    background-attachment: initial;
+  }
 }
 .landing-wrapper #header {
   width: 100%;

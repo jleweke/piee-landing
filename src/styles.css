@@ -18,14 +18,13 @@ p, body, .card-text {
     position: relative;
     top: 50px;
 }
-.parallax { 
-    /* Create the parallax scrolling effect */
+/* .parallax { 
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-}
+} */
 .overlay {
     background-color: rgba(64, 63, 72, 0.86);
     position: absolute;
