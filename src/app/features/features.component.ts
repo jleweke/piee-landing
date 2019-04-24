@@ -20,7 +20,7 @@ featuresContent = [{
         "image": [{
           "alt":"Data and automation image",
           "title":"Data and automation",
-          "url":"assets/images/features/data-tools-min.png"
+          "url":"assets/images/features/data-tools.png"
          }],
         "imageRight":"",
         "highlightContent": [
@@ -69,7 +69,7 @@ featuresContent = [{
         "image": [{
           "alt":"Financial tools image",
           "title":"Financial tools",
-          "url":"assets/images/features/financial-tools-min.png"
+          "url":"assets/images/features/financial-tools.png"
          }],
         "imageRight":"t",
         "highlightContent": [
@@ -108,7 +108,7 @@ featuresContent = [{
         "image": [{
           "alt":"Business administration tools image",
           "title":"Business administration tools",
-          "url":"assets/images/features/business-strategy-min.png"
+          "url":"assets/images/features/business-strategy.png"
          }],
         "imageRight":"",
         "highlightContent": [
