@@ -22,7 +22,21 @@
               "src/favicon.ico",
               "src/assets",
               "src/sitemap.xml",
-              "src/robots.txt"
+              "src/robots.txt",
+              "src/favicon-sm.png",
+              "src/favicon-lg.png",
+              "src/favicon-md.png",
+              "src/apple-icon-xs.png",
+              "src/apple-icon-sm.png",
+              "src/apple-icon-md.png",
+              "src/apple-icon-xmd.png",
+              "src/apple-icon-lg.png",
+              "src/apple-icon-xlg.png",
+              "src/apple-icon-xxlg.png",
+              "src/apple-icon-xxxlg.png",
+              "src/apple-icon-xxxxlg.png",
+              "src/android-icon.png",
+              "src/manifest.json"
             ],
             "styles": [
               "node_modules/primeng/resources/primeng.min.css",
@@ -96,7 +110,21 @@
             "scripts": [],
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/favicon-sm.png",
+              "src/favicon-lg.png",
+              "src/favicon-md.png",
+              "src/apple-icon-xs.png",
+              "src/apple-icon-sm.png",
+              "src/apple-icon-md.png",
+              "src/apple-icon-xmd.png",
+              "src/apple-icon-lg.png",
+              "src/apple-icon-xlg.png",
+              "src/apple-icon-xxlg.png",
+              "src/apple-icon-xxxlg.png",
+              "src/apple-icon-xxxxlg.png",
+              "src/android-icon.png",
+              "src/manifest.json"
             ]
           }
         },

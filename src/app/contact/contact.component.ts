@@ -25,7 +25,7 @@ contactContent = [{
       "paragraph":"The Procurement Integrated Enterprise Environment Helpdesk cannot take any action on your WAWF document."
       },
       {
-      "paragraph":"For payment status, please validate the invoice in question is in a processed status in the WAWF application. If your document is in a processed status, please contact DFAS for payment information or go the myInvoice application, which is now a part of Procurement Integrated Enterprise Environment, or contact DFAS for payment information."
+      "paragraph":"For payment status, please validate the invoice in question is in a processed status in the WAWF application. If your document is in a processed status, please contact DFAS for payment information or go to the myInvoice application, which is now a part of Procurement Integrated Enterprise Environment, or contact DFAS for payment information."
     }],
     "highlightLinkText":"",
     "highlightLink":"tel:866.618.5988",

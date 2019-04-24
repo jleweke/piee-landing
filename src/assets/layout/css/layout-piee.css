@@ -796,6 +796,7 @@ html {
 
 body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-display: auto;
   font-size: 1em;
   line-height: 1.5em;
   color: #212121;
