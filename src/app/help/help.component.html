@@ -21,7 +21,7 @@
               <li *ngFor="let download of resource.downloads"><a [href]="download.downloadUrl">{{download.downloadText}}</a></li>
             </ul>
             <p-footer>
-              <div class="center">
+              <div *ngIf="resource.highlightLink" class="center">
                 <a class="ui-button text-button"  role="button" href="{{resource.highlightLink}}">{{resource.highlightLinkText}} </a>
               </div>
             </p-footer>                   

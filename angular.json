@@ -46,7 +46,7 @@
               "src/styles.css"
             ],
             "scripts": [
-              "src/assets/pages/jquery.js"
+              
             ]
           },
           "configurations": {

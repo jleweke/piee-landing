@@ -1,4 +1,4 @@
-<section *ngFor="let contact of contactContent"  id="{{contact.contentBlockId}}" role="complementary" class="bg-accent">
+<section *ngFor="let contact of contactContent"  id="{{contact.contentBlockId}}" class="bg-accent">
     <div class="p-grid p-align-center container pb-5">
       <div class="p-col-12 p-lg-6">
           <h2 class="display-2 h2 font-weight-bold" [ngClass]="!contact.subTitle ? 'mb-5 pb-3' : ''">{{contact.title}}<span class="text-yellow">.</span></h2>

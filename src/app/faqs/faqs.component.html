@@ -1,4 +1,4 @@
-<section *ngFor="let faqs of faqsContent"  id="{{faqs.contentBlockId}}" role="complementary" class="bg-dark">
+<section *ngFor="let faqs of faqsContent"  id="{{faqs.contentBlockId}}"  class="bg-dark">
   <div class="p-grid p-align-center container pb-5">
     <div class="p-col-12 p-lg-6">
         <h2 class="display-2 h2 font-weight-bold" [ngClass]="!faqs.subTitle ? 'mb-5 pb-3' : ''">{{faqs.title}}<span class="text-yellow">.</span></h2>
@@ -11,23 +11,6 @@
                 <p-accordionTab header="{{faq.question}}">
                     {{faq.answer}}
                     <p><a [href]="faq.url">{{faq.linkText}}</a></p>
-                    <!-- <table>
-                      <thead style="text-align: left">
-                        <th>Agency</th>
-                        <th>System</th>
-                        <th>Contact</th>
-                      </thead>
-                      <tbody>
-                        <tr style="word-break: break-word">
-                          <td class="p-col-4">Air Force Finance Help Desk
-                          </td>
-                          <td class="p-col-2">PIEE
-                          </td>
-                          <td class="p-col-6">Email: saf.fmpaffso.customerservice@us.af.mil<br/>Phone: 937-257-3117 
-                            <br/>DSN: 312-787-3117</td>
-                        </tr>
-                      </tbody>
-                    </table> -->
                     <div *ngIf="faq.tableContent" class="p-grid container">
                     <div class="p-col-12 p-lg-6" style="word-wrap: break-word">
                       <p><strong>Air Force Finance Help Desk</strong> 
